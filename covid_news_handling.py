@@ -51,7 +51,3 @@ def update_news(current_news:list = []):
     current_news_titles = get_current_article_titles(current_news)
     #Return a list of new articles where the title hasnt been seen before
     return [article for article in news_request if article['title'] not in current_news_titles]
-
-art = update_news()
-
-c.print(art)

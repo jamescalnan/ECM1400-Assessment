@@ -1,5 +1,4 @@
 from covid_data_handler import parse_csv_data, process_covid_csv_data
-from menu import run_menu
 from rich.console import Console
 c = Console()
 
