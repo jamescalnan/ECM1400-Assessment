@@ -34,8 +34,13 @@ def get_current_article_titles(data: list=[]):
         list: Returns a list of article titles
     """
     #todo: need to fix this fuction so that news articles can be removed
-    if len(data) > 0:
-        c.print(data[0]['title'])
+    c.print("\n\n\n\n[red]HERE")
+    c.print(f"length of data: {len(data)}")
+    c.print("\n\n\n\n")
+    for x in data:
+        c.print(f"data: {x}")
+        input()
+    
     return [] if len(data) == 0 else [x['title'] for x in data]
 
 
@@ -51,6 +56,26 @@ def update_news(current_news:list = []):
     #Make news request
     news_request = news_API_request()
     #Get the titles for the current news articles in use
-    current_news_titles = get_current_article_titles(current_news)
+    if len(current_news) == 0:
+        current_news_titles = []
+    else:
+        current_news_titles = get_current_article_titles(current_news)
     #Return a list of new articles where the title hasnt been seen before
     return [article for article in news_request if article['title'] not in current_news_titles]
+
+
+#current_news = []#news_API_request()
+
+#c.print([x['title'] for x in current_news])
+
+#input()
+
+#first_article = current_news[0]
+
+#c.print(f"first: {first_article}")
+
+#c.print(len(current_news))
+
+#current_news = update_news([])
+
+#c.print(len(current_news))

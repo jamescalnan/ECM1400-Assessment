@@ -18,3 +18,5 @@ def test_process_covid_csv_data():
     assert last7days_cases == 240299
     assert current_hospital_cases == 7019
     assert total_deaths == 141544
+
+c.print(process_covid_csv_data(covid_API_request("exeter", "ltla")))
