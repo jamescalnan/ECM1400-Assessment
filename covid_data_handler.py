@@ -16,20 +16,12 @@ def parse_csv_data(csv_filename):
     return [row for row in csv.reader(open(csv_filename))]
 
 def get_total_deaths(data, x):
-    """Goes through the deaths column and returns the first thing that isnt an empty string or none
-
-    Args:
-        data (list): CSV data
-        x (int): Used to recursively go down the function
-
-    Returns:
-        str: The first value that should be the total deaths
-    """
+    c.print(data[x][4])
     if data[x][4] in ['', None]:
         return get_total_deaths(data, x + 1)
     return data[x][4]
 
-def starting_index(data, x):
+def starting_index(data, col, x):
     """Gets the starting index when to start looking at the data
 
     Args:
@@ -39,9 +31,9 @@ def starting_index(data, x):
     Returns:
         int: Starting index
     """
-    if data[x + 1][6] != '':
-        return x + 1
-    starting_index(data, x + 1)
+    if x + 2 > len(data) : return None
+    if data[x + 1][col] != '' : return x + 1
+    return starting_index(data, col, x + 1)
 
 def process_covid_csv_data(covid_csv_data):
     """Processes the Covid CSV data
@@ -54,10 +46,14 @@ def process_covid_csv_data(covid_csv_data):
         int: The current hospital cases
         int: The current total deaths
     """
-    start_idx = starting_index(covid_csv_data, 1)
+    start_idx = starting_index(covid_csv_data, 6, 1)
     last7days_cases = sum([int(covid_csv_data[x + 1][6]) for x in range(start_idx, start_idx + 7)])
-    current_hospital_cases = int(covid_csv_data[1][5])
-    total_deaths = int(get_total_deaths(covid_csv_data, 1))
+
+    start_idx = starting_index(covid_csv_data, 5, 1)
+    current_hospital_cases = int(covid_csv_data[start_idx - 1][5]) if start_idx != None else None
+    
+    start_idx = starting_index(covid_csv_data, 4, 1)
+    total_deaths = int(covid_csv_data[start_idx][4]) if start_idx != None else None
 
     return last7days_cases, current_hospital_cases, total_deaths
 
@@ -87,7 +83,7 @@ def covid_API_request(location: str="Exeter", location_type: str="ltla"):
 
     api = Cov19API(filters=england_only, structure=struct)
     data = api.get_csv()
-    return [row.split(",") for row in data.split("\n")][1:]
+    return [row.split(",") for row in data.split("\n")][1:][:-1]
 
 
 def schedule_covid_updates(update_interval, update_name):

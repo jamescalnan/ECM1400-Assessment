@@ -33,6 +33,9 @@ def get_current_article_titles(data: list=[]):
     Returns:
         list: Returns a list of article titles
     """
+    #todo: need to fix this fuction so that news articles can be removed
+    if len(data) > 0:
+        c.print(data[0]['title'])
     return [] if len(data) == 0 else [x['title'] for x in data]
 
 

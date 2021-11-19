@@ -1,5 +1,7 @@
 from covid_data_handler import parse_csv_data, process_covid_csv_data
 from rich.console import Console
+from covid_data_handler import *
+from covid_news_handling import *
 c = Console()
 
 
@@ -16,4 +18,3 @@ def test_process_covid_csv_data():
     assert last7days_cases == 240299
     assert current_hospital_cases == 7019
     assert total_deaths == 141544
-
