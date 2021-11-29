@@ -2,6 +2,7 @@ from rich.console import Console
 c = Console()
 import api_keys, requests
 
+removed_articles = []
 
 def news_API_request(covid_terms: str="Covid COVID-19 coronavirus"):
     """Makes request to news API
@@ -35,13 +36,10 @@ def get_current_article_titles(data: list=[]):
     """
     #todo: need to fix this fuction so that news articles can be removed
     c.print("\n\n\n\n[red]HERE")
-    c.print(f"length of data: {len(data)}")
+    c.print(f"length of data: {len(data[0])}")
     c.print("\n\n\n\n")
-    for x in data:
-        c.print(f"data: {x}")
-        input()
     
-    return [] if len(data) == 0 else [x['title'] for x in data]
+    return [] if len(data) == 0 else [x['title'] for x in data[0]]
 
 
 def update_news(current_news:list = []):
@@ -61,21 +59,14 @@ def update_news(current_news:list = []):
     else:
         current_news_titles = get_current_article_titles(current_news)
     #Return a list of new articles where the title hasnt been seen before
-    return [article for article in news_request if article['title'] not in current_news_titles]
 
+    return [article for article in news_request if article['title'] not in current_news_titles and article['title'] not in removed_articles]
 
-#current_news = []#news_API_request()
-
-#c.print([x['title'] for x in current_news])
-
-#input()
-
-#first_article = current_news[0]
-
-#c.print(f"first: {first_article}")
-
-#c.print(len(current_news))
-
-#current_news = update_news([])
-
-#c.print(len(current_news))
+def remove_article(article_title:str, current_articles:list = []):
+    if len(current_articles) == 0:
+        return []
+    
+    removed_articles.append(article_title)
+    return_list = [x for x in current_articles if x['title'] != article_title]
+    
+    return return_list    

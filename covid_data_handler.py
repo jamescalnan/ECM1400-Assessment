@@ -47,14 +47,14 @@ def process_covid_csv_data(covid_csv_data):
         int: The current total deaths
     """
     start_idx = starting_index(covid_csv_data, 6, 1)
-    last7days_cases = sum([int(covid_csv_data[x + 1][6]) for x in range(start_idx, start_idx + 7)])
+    last7days_cases = "{:,}".format(sum([int(covid_csv_data[x + 1][6]) for x in range(start_idx, start_idx + 7)]))
 
     start_idx = starting_index(covid_csv_data, 5, 1)
-    current_hospital_cases = int(covid_csv_data[start_idx - 1][5]) if start_idx != None else None
+    current_hospital_cases = "{:,}".format(int(covid_csv_data[start_idx - 1][5])) if start_idx != None else "No Data"
     
     start_idx = starting_index(covid_csv_data, 4, 1)
-    total_deaths = int(covid_csv_data[start_idx][4]) if start_idx != None else None
-
+    total_deaths = "{:,}".format(int(covid_csv_data[start_idx][4])) if start_idx != None else "No Data"
+    
     return last7days_cases, current_hospital_cases, total_deaths
 
 
