@@ -62,6 +62,12 @@ def home():
                             'title' : f'Covid data update: {update_name}',
                             'data' : covid_data})
             c.print(update_queue)
+            #todo NEED TO MAKE THE UPDATE QUEUE REMOVE ITEMS ONCE THEYVE BEEN EXECUTED
+            #NEED TO MAKE IT SO THAT REPEATING UPDATES WORK
+            #NEED TO MAKE IT SO THAT NEWS UPDATES WORK
+            #CURRENTLY THE UPDATES FOR THE COVID DATA WORK AND THE DATA IS UPDATED
+            #THE SCHEDULED UPDAE DOESNT CONTINUE TO HAPPEN, IT IS A ONE TIME UPDATE OF THE VARIABLES
+            
             threading.Thread(target=schedule_covid_updates, args=(time_till_update, 1, get_covid_data, covid_data, nation, "nation")).start()
 
 

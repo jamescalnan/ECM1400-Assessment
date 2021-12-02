@@ -138,7 +138,6 @@ def get_covid_data(return_value, location, location_type, repeat=False):
 
 def schedule_covid_updates(delay, prio, func, result, location=None, location_type=None, repeat=False):
     scheduler.enter(delay, prio, func, (result, location, location_type, repeat, ))
-    scheduler.enter(delay, prio, func, (result, location, location_type, repeat, ))
     scheduler.run()
 
 
