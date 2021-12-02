@@ -1,15 +1,18 @@
-from rich.console import Console
-c = Console()
 import api_keys, requests
+from rich.console import Console
+import shared_variables
+c = Console()
 
 removed_articles = []
+
 
 def news_API_request(covid_terms: str="Covid COVID-19 coronavirus"):
     """Makes request to news API
 
     Args:
-        covid_terms (str, optional): Takes in the articles as a. Defaults to 'Covid COVID-19 coronavirus'.
-
+        covid_terms (str, optional): Takes in the articles as a string
+        Defaults to 'Covid COVID-19 coronavirus'.
+        
     Returns:
         list: Returns a list of dictionary items of articles
     """
@@ -69,4 +72,6 @@ def remove_article(article_title:str, current_articles:list = []):
     removed_articles.append(article_title)
     return_list = [x for x in current_articles if x['title'] != article_title]
     
-    return return_list    
+    return return_list
+
+shared_variables.news_articles = update_news()

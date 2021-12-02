@@ -1,8 +1,23 @@
-import csv, schedule
+import csv
+import time
+import sched
+import threading
 from rich.console import Console
+from rich.emoji import NoEmoji
 from uk_covid19 import Cov19API
 
 c= Console()
+scheduler = sched.scheduler(time.time,
+                            time.sleep)
+
+def infections(data: list):
+    return data[0]#[0]
+
+def hospital(data: list):
+    return data[1]#[1]
+
+def deaths(data: list):
+    return data[2]#[2]
 
 def parse_csv_data(csv_filename):
     """Parses CSV data
@@ -13,15 +28,26 @@ def parse_csv_data(csv_filename):
     Returns:
         list: Returns the csv data in a list file
     """
-    return [row for row in csv.reader(open(csv_filename))]
+    return [row for row in csv.reader(open(csv_filename, encoding="utf8"))]
 
-def get_total_deaths(data, x):
-    c.print(data[x][4])
-    if data[x][4] in ['', None]:
-        return get_total_deaths(data, x + 1)
-    return data[x][4]
 
-def starting_index(data, col, x):
+def get_total_deaths(data, increment):
+    """Gets the data for the total deaths
+
+    Args:
+        data (list): CSV data
+        increment (int): used for recursion
+
+    Returns:
+        string: the total death number
+    """
+    c.print(data[increment][4])
+    if data[increment][4] in ['', None]:
+        return get_total_deaths(data, increment + 1)
+    return data[increment][4]
+
+
+def starting_index(data, col, increment):
     """Gets the starting index when to start looking at the data
 
     Args:
@@ -31,9 +57,12 @@ def starting_index(data, col, x):
     Returns:
         int: Starting index
     """
-    if x + 2 > len(data) : return None
-    if data[x + 1][col] != '' : return x + 1
-    return starting_index(data, col, x + 1)
+    if increment + 2 > len(data):
+        return None
+    if data[increment + 1][col] != '':
+        return increment + 1
+    return starting_index(data, col, increment + 1)
+
 
 def process_covid_csv_data(covid_csv_data):
     """Processes the Covid CSV data
@@ -47,14 +76,17 @@ def process_covid_csv_data(covid_csv_data):
         int: The current total deaths
     """
     start_idx = starting_index(covid_csv_data, 6, 1)
-    last7days_cases = "{:,}".format(sum([int(covid_csv_data[x + 1][6]) for x in range(start_idx, start_idx + 7)]))
+    last7days_cases = "{:,}".format(sum([int(covid_csv_data[x + 1][6])
+                                         for x in range(start_idx, start_idx + 7)]))
 
     start_idx = starting_index(covid_csv_data, 5, 1)
-    current_hospital_cases = "{:,}".format(int(covid_csv_data[start_idx - 1][5])) if start_idx != None else "No Data"
-    
+    current_hospital_cases = ("{:,}".format(int(covid_csv_data[start_idx - 1][5]))
+                              if start_idx is not None else "No Data")
+
     start_idx = starting_index(covid_csv_data, 4, 1)
-    total_deaths = "{:,}".format(int(covid_csv_data[start_idx][4])) if start_idx != None else "No Data"
-    
+    total_deaths = ("{:,}".format(int(covid_csv_data[start_idx][4]))
+                    if start_idx is not None else "No Data")
+
     return last7days_cases, current_hospital_cases, total_deaths
 
 
@@ -86,11 +118,43 @@ def covid_API_request(location: str="Exeter", location_type: str="ltla"):
     return [row.split(",") for row in data.split("\n")][1:][:-1]
 
 
-def schedule_covid_updates(update_interval, update_name):
-    """Schedules updates
+def get_covid_data(return_value, location, location_type, repeat=False):
+    local_data = covid_API_request()
+    national_data = covid_API_request(location, location_type)
+    
+    local_data = process_covid_csv_data(local_data)
+    national_data = process_covid_csv_data(national_data)
+    
+    return_value.clear()
+    return_value.append((infections(local_data),
+                         infections(national_data),
+                         hospital(national_data),
+                         deaths(national_data),
+                         repeat))
+    
+    c.print("[red]UPDATE DONE")
+    c.print(f"NEW DATA: {return_value}")
 
-    Args:
-        update_interval (int): The update interval
-        update_name (str): The name of the update to do
-    """
-    schedule.every(update_interval).do(update_name)
+
+def schedule_covid_updates(delay, prio, func, result, location=None, location_type=None, repeat=False):
+    scheduler.enter(delay, prio, func, (result, location, location_type, repeat, ))
+    scheduler.enter(delay, prio, func, (result, location, location_type, repeat, ))
+    scheduler.run()
+
+
+#threading.Thread(target=f).start()
+"""
+local_cov_data = []
+cov_data = []
+
+threading.Thread(target=schedule_covid_updates, args=(3, 1, get_covid_data, cov_data)).start()
+threading.Thread(target=schedule_covid_updates, args=(3, 1, get_covid_data, local_cov_data, "england", "nation")).start()
+
+
+i = 0
+while True:
+    c.print(f"i: {i}")
+    i += 1
+    time.sleep(1)
+    c.print(cov_data, local_cov_data)
+"""
