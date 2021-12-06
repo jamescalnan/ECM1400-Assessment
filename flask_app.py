@@ -26,23 +26,29 @@ input()
 app = Flask(__name__)
 
 
-def get_seconds_till_update(ut: str= None):
+def get_seconds_till_update(ut: str, repeating=False):
     current_time = datetime.datetime.now()
     update_time = ut.split(":")
     wanted_time = current_time.replace(hour=int(update_time[0]), minute=int(update_time[1]), second=0)
 
-    if wanted_time < current_time:
-        wanted_time.replace(day=wanted_time.day + 1)
+    c.print(f"[green]HERE: {wanted_time, current_time}")
 
-    return (wanted_time - current_time).total_seconds()
+    if wanted_time < current_time:
+        wanted_time = wanted_time.replace(day=wanted_time.day + 1)
+
+    c.print(wanted_time)
+    input()
+
+    return (wanted_time - current_time).total_seconds(), wanted_time# if not repeating else 86400 - (wanted_time - current_time).total_seconds()
 
 
 def update_elapsed(updated_time):
     current_time = datetime.datetime.now()
-    update_time = updated_time.split(":")
-    wanted_time = current_time.replace(hour=int(update_time[0]), minute=int(update_time[1]), second=0)
-
-    return wanted_time < current_time
+    #update_time = updated_time.split(":")
+    #wanted_time = current_time.replace(hour=int(update_time[0]), minute=int(update_time[1]), second=0)
+    c.print(f"[yellow]{updated_time} < {current_time} : {updated_time < current_time}")
+    input()
+    return updated_time < current_time
         
 
 
@@ -77,8 +83,8 @@ def home():
         covid_update = 'covid-data' in request.args
         news_update = 'news' in request.args
         
-        time_till_update = get_seconds_till_update(time)
-        
+        seconds_till_update, update_time = get_seconds_till_update(time)
+        c.print(seconds_till_update)
         
         
         if covid_update:
@@ -86,7 +92,7 @@ def home():
                             'title' : f'Covid data update: {update_name}',
                             'data' : sv.covid_data,
                             'name' : update_name,
-                            'time' : time,
+                            'time' : update_time,
                             'repeating' : repeat_update,
                             'type' : 'covid'})
             c.print(sv.update_queue)
@@ -96,45 +102,69 @@ def home():
             #NEED TO MAKE IT SO THAT NEWS UPDATES WORK
             #CURRENTLY THE UPDATES FOR THE COVID DATA WORK AND THE DATA IS UPDATED
             #THE SCHEDULED UPDAE DOESNT CONTINUE TO HAPPEN, IT IS A ONE TIME UPDATE OF THE VARIABLES
-            threading.Thread(target=schedule_covid_updates, args=(time_till_update, 1, get_covid_data, sv.covid_data, update_name, time, nation, "nation"),name=update_name).start()
+            threading.Thread(target=schedule_covid_updates, args=(seconds_till_update, 1, get_covid_data, sv.covid_data, update_name, time, nation, "nation"),name=update_name).start()
             return flask.redirect(request.path)
 
 
         #schedule_covid_updates(time_till_update, 1, get_covid_data, )
     #
-    if len(sv.covid_data) > 0:
-        #i only want to remove the init values if there is also another value in there
-        c.print(f"inside of the if statement")
-        c.print(sv.covid_data)
-        covid_update_in_queue = [x for x in sv.update_queue if x['type'] == 'covid']
-        c.print(covid_update_in_queue)
+    covid_update_in_queue = [x for x in sv.update_queue if x['type'] == 'covid']
+    if len(covid_update_in_queue) > 0:
+        elapsed_updates = []
+
+        for i, item in enumerate(sv.update_queue):
+            if update_elapsed(item['time']):
+                elapsed_updates.append((i, item['name'], item['repeating']))
+        c.print(f"elapsed: {elapsed_updates}")
+        c.print(sv.update_queue)
         input()
-        if sv.covid_data[0][-1] == "INIT" and len(sv.covid_data) >= 2:
-            sv.covid_data = sv.covid_data[1:]
-            c.print("[red]HERE")
-            c.print(sv.covid_data)
-            input()
-        elif not sv.covid_data[0][-1] == "INIT" and len(covid_update_in_queue) > 0: #if its not the init data and there is a covid update in the queue
-            elapsed_updates = []
+        for item in elapsed_updates:
+            if item[2]:
+                for thread in threading.enumerate(): 
+                    print(thread.name)
+                input()
+                #the update is repeating
+                #requeue the update
+                data = sv.update_queue[item[0]]
+                c.print(data)
+                input()
+                time_in_format = f"{' ' if len(str(data['time'].hour)) == 1 else ''}{data['time'].hour}:{' ' if len(str(data['time'].minute)) == 1 else ''}{data['time'].minute}"
+                #seconds = get_seconds_till_update(data['time'], True)
+                c.print(time_in_format)
+                input()
+                time_in_format = get_seconds_till_update(time_in_format)
+                c.print(f"seconds till: {time_in_format}")
+                
+                
+                input()
+                
+                threading.Thread(target=schedule_covid_updates,
+                                 args=(time_in_format[0],
+                                       1, get_covid_data,
+                                       sv.covid_data,
+                                       data['name'],
+                                       data['time'],
+                                       nation,
+                                       "nation"),name=data['name']).start()
+                
+                c.print(sv.update_queue[item[0]]['time'])
+                sv.update_queue[item[0]]['time'] = time_in_format[1]
+                c.print(sv.update_queue[item[0]]['time'])
+                elapsed_updates.remove(item)
+                input()
+                
+        if len(elapsed_updates) > 0:
             
-            for item in sv.update_queue:
-                if update_elapsed(item['time']):
-                    elapsed_updates.append(item['name'])
-            c.print(elapsed_updates)
-            input()
             new_update_queue = []
             for item in sv.update_queue:
-                if item['name'] in elapsed_updates:
+                if item['name'] in [x[1] for x in elapsed_updates] and not item['repeating']:
                     continue
                 new_update_queue.append(item)
             sv.update_queue = new_update_queue.copy()
-            c.print(sv.update_queue)
-            input()
+            
             return flask.redirect(request.path)
-    # for item in covid_data:
-        #check if time has elapsed
 
-        
+
     """
     time: 19:36
     label: update_label
