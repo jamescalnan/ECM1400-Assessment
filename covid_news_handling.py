@@ -1,6 +1,6 @@
 import api_keys, requests
 from rich.console import Console
-import shared_variables
+import sv
 c = Console()
 
 removed_articles = []
@@ -74,4 +74,4 @@ def remove_article(article_title:str, current_articles:list = []):
     
     return return_list
 
-shared_variables.news_articles = update_news()
+sv.news_articles = update_news()

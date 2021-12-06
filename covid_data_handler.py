@@ -1,10 +1,9 @@
 import csv
 import time
 import sched
-import threading
 from rich.console import Console
-from rich.emoji import NoEmoji
 from uk_covid19 import Cov19API
+import sv
 
 c= Console()
 scheduler = sched.scheduler(time.time,
@@ -118,27 +117,34 @@ def covid_API_request(location: str="Exeter", location_type: str="ltla"):
     return [row.split(",") for row in data.split("\n")][1:][:-1]
 
 
-def get_covid_data(return_value, location, location_type, repeat=False):
+def get_covid_data(return_value, location, location_type, name, time, repeat=False):
+    if name in sv.cancelled_threads:
+        sv.cancelled_threads.remove(name)
+        return
+
     local_data = covid_API_request()
     national_data = covid_API_request(location, location_type)
     
     local_data = process_covid_csv_data(local_data)
     national_data = process_covid_csv_data(national_data)
     
-    return_value.clear()
+    
     return_value.append((infections(local_data),
                          infections(national_data),
                          hospital(national_data),
                          deaths(national_data),
+                         name,
+                         time,
                          repeat))
     
     c.print("[red]UPDATE DONE")
     c.print(f"NEW DATA: {return_value}")
 
 
-def schedule_covid_updates(delay, prio, func, result, location=None, location_type=None, repeat=False):
-    scheduler.enter(delay, prio, func, (result, location, location_type, repeat, ))
+def schedule_covid_updates(delay, prio, func, result, thread_name, time, location=None, location_type=None, repeat=False):
+    scheduler.enter(delay, prio, func, (result, location, location_type, thread_name, time, repeat, ))
     scheduler.run()
+    
 
 
 #threading.Thread(target=f).start()
