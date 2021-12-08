@@ -6,6 +6,7 @@ import sched
 import sv
 import time
 import logging
+import json
 
 c = Console()
 
@@ -15,7 +16,7 @@ scheduler = sched.scheduler(time.time,
 removed_articles = []
 
 
-def news_API_request(covid_terms: str = "Covid COVID-19 coronavirus"):
+def news_API_request(covid_terms: str = json.loads(open("config.json", encoding="utf8").read())['news_terms'], increment:bool = True):
     """Makes request to news API
 
     Args:
@@ -25,7 +26,7 @@ def news_API_request(covid_terms: str = "Covid COVID-19 coronavirus"):
     Returns:
         list: Returns a list of dictionary items of articles
     """
-    sv.page += 1
+    sv.page += 1 if increment else 0
     url = ('https://newsapi.org/v2/everything?'
            f'q={covid_terms}&'
            'sortBy=popularity&'
