@@ -1,6 +1,7 @@
 import csv
 import time
 import sched
+import json
 from rich.console import Console
 from uk_covid19 import Cov19API
 import sv
@@ -89,7 +90,8 @@ def process_covid_csv_data(covid_csv_data):
     return last7days_cases, current_hospital_cases, total_deaths
 
 
-def covid_API_request(location: str="Exeter", location_type: str="ltla"):
+def covid_API_request(location: str=json.loads(open("config.json", encoding="utf8").read())['location'],
+                      location_type: str=json.loads(open("config.json", encoding="utf8").read())['location_type']):
     """Makes a request to the Cov19API
 
     Args:
@@ -117,49 +119,27 @@ def covid_API_request(location: str="Exeter", location_type: str="ltla"):
     return [row.split(",") for row in data.split("\n")][1:][:-1]
 
 
-def get_covid_data(return_value, location, location_type, name, time, repeat=False):
-    if name in sv.cancelled_threads:
-        sv.cancelled_threads.remove(name)
+def get_covid_data(name):
+    if (name, "covid") in sv.cancelled_threads:
+        sv.cancelled_threads.remove((name, "covid"))
         return
 
     local_data = covid_API_request()
-    national_data = covid_API_request(location, location_type)
+    national_data = covid_API_request(json.loads(open("config.json", encoding="utf8").read())['nation'], 'nation')
     
     local_data = process_covid_csv_data(local_data)
     national_data = process_covid_csv_data(national_data)
-    
-    
-    return_value.append((infections(local_data),
+
+
+    sv.covid_data.append((infections(local_data),
                          infections(national_data),
                          hospital(national_data),
-                         deaths(national_data),
-                         name,
-                         time,
-                         repeat))
-    
+                         deaths(national_data)))
+
     c.print("[red]UPDATE DONE")
-    c.print(f"NEW DATA: {return_value}")
+    c.print(f"NEW DATA: {sv.covid_data}")
 
 
-def schedule_covid_updates(delay, prio, func, result, thread_name, time, location=None, location_type=None, repeat=False):
-    scheduler.enter(delay, prio, func, (result, location, location_type, thread_name, time, repeat, ))
+def schedule_covid_updates(delay, prio, thread_name):
+    scheduler.enter(delay, prio, get_covid_data, (thread_name, ))
     scheduler.run()
-    
-
-
-#threading.Thread(target=f).start()
-"""
-local_cov_data = []
-cov_data = []
-
-threading.Thread(target=schedule_covid_updates, args=(3, 1, get_covid_data, cov_data)).start()
-threading.Thread(target=schedule_covid_updates, args=(3, 1, get_covid_data, local_cov_data, "england", "nation")).start()
-
-
-i = 0
-while True:
-    c.print(f"i: {i}")
-    i += 1
-    time.sleep(1)
-    c.print(cov_data, local_cov_data)
-"""
