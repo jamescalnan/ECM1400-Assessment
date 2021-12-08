@@ -38,10 +38,30 @@ def get_seconds_till_update(ut: str):
 
 def update_elapsed(updated_time):
     current_time = datetime.datetime.now()
-    #update_time = updated_time.split(":")
-    #wanted_time = current_time.replace(hour=int(update_time[0]), minute=int(update_time[1]), second=0)
     return updated_time < current_time
-        
+
+
+def enqueue_update(request_time:str = format_time(datetime.datetime.now()),
+                   update_type:str = "News",
+                   update_name:str = "EMPTY",
+                   news_update:bool = True,
+                   update_time:datetime = datetime.datetime.now(),
+                   repeat_update:bool = False):
+    
+    sv.update_queue.append({'content' : f'{"Repeating update" if repeat_update else "Update"} at {request_time} for {update_type} data',
+                            'title' : f'{update_type} data update: {update_name}',
+                            'data' : sv.news_articles if news_update else sv.covid_data,
+                            'name' : update_name,
+                            'time' : update_time,
+                            'repeating' : repeat_update,
+                            'type' : update_type.lower()})
+
+def start_thread(target = schedule_covid_updates, seconds_till_update:float = 5, update_name:str="update", thread_type:str=''):
+    threading.Thread(target=target,
+                     args=(seconds_till_update,
+                           1,
+                           update_name),
+                     name=update_name + thread_type).start()
 
 
 @app.route("/index", methods=["POST","GET"])
@@ -67,75 +87,51 @@ def home():
 
     if "update" in request.args:
 
-        time = request.args['update']
+        request_time = request.args['update']
         update_name = request.args['two']
         repeat_update = 'repeat' in request.args
         covid_update = 'covid-data' in request.args
         news_update = 'news' in request.args
         
-        seconds_till_update, update_time = get_seconds_till_update(time)
+        seconds_till_update, update_time = get_seconds_till_update(request_time)
+
         
         if covid_update:
-            sv.update_queue.append({'content' : f'{"Repeating" if repeat_update else ""} update at {time} for covid data',
-                            'title' : f'Covid data update: {update_name}',
-                            'data' : sv.covid_data,
-                            'name' : update_name,
-                            'time' : update_time,
-                            'repeating' : repeat_update,
-                            'type' : 'covid'})
-            threading.Thread(target=schedule_covid_updates,
-                             args=(seconds_till_update,
-                                   1,
-                                   update_name),
-                             name=update_name).start()
+            enqueue_update(request_time, "COVID-19", update_name, covid_update, update_time, repeat_update)
+            start_thread(schedule_covid_updates, seconds_till_update, update_name)
             if not news_update:
                 return flask.redirect(request.path)
 
         if news_update:
-            sv.update_queue.append({'content' : f'{"Repeating" if repeat_update else ""} update at {time} for news data',
-                            'title' : f'News data update: {update_name}',
-                            'data' : sv.news_articles,
-                            'name' : update_name,
-                            'time' : update_time,
-                            'repeating' : repeat_update,
-                            'type' : 'news'})
-            threading.Thread(target=schedule_news_updates,
-                             args=(seconds_till_update,
-                                   1,
-                                   update_name),
-                             name=update_name).start()
+            enqueue_update(request_time, "News", update_name, news_update, update_time, repeat_update)
+            start_thread(schedule_news_updates, seconds_till_update, update_name)
             return flask.redirect(request.path)
 
 
-    #
-    covid_update_in_queue = [x for x in sv.update_queue if x['type'] == 'covid']
-    if len(covid_update_in_queue) > 0:
-        elapsed_updates = []
-        for i, item in enumerate(sv.update_queue):
-            if update_elapsed(item['time']) and item['type'] == 'covid':
-                elapsed_updates.append((i, item['name'], item['repeating']))
+    if len(sv.update_queue) > 0:
+        elapsed_updates = [(i, item['name'],
+                            item['repeating'],
+                            item['type']) for i, item in enumerate(sv.update_queue) if update_elapsed(item['time'])]
+
         for item in elapsed_updates:
             if item[2]:
-                #the update is repeating
-                #requeue the update
                 data = sv.update_queue[item[0]]
-                time_in_format = format_time(data['time'])
-                time_in_format = get_seconds_till_update(time_in_format)
+                time_in_format = get_seconds_till_update(format_time(data['time']))
+                update_type = data['type']
 
-                threading.Thread(target=schedule_covid_updates,
-                             args=(time_in_format[0],
-                                   1,
-                                   data['name']),
-                             name=data['name']).start()
-                
+                start_thread(schedule_news_updates if update_type == "news" else schedule_covid_updates,
+                             time_in_format[0],
+                             data['name'],
+                             update_type)
+
                 sv.update_queue[item[0]]['time'] = time_in_format[1]
                 elapsed_updates.remove(item)
+                return flask.redirect(request.path)
                 
         if len(elapsed_updates) > 0:
-
             new_update_queue = []
             for item in sv.update_queue:
-                if item['name'] in [x[1] for x in elapsed_updates] and item['type'] == 'covid' and not item['repeating']:
+                if item['name'] in [x[1] for x in elapsed_updates] and not item['repeating']:
                     continue
                 new_update_queue.append(item)
             sv.update_queue = new_update_queue.copy()
@@ -143,22 +139,6 @@ def home():
             return flask.redirect(request.path)
 
 
-    """
-    time: 19:36
-    label: update_label
-    repeat: true
-    up cov: true
-    up news: true
-
-    ?update=19%3A36&two=update_label&repeat=repeat&covid-data=covid-data&news=news
-    """
-
-    """
-    ?update=19%3A34&two=label&covid-data=covid-data
-    """
-
-    c.print(f"here\n{sv.covid_data}")
-    input()
     return render_template(
         "index.html",
         updates=sv.update_queue,

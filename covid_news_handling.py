@@ -80,8 +80,10 @@ def get_updated_news_data(name):
     if (name, "covid") in sv.cancelled_threads:
         sv.cancelled_threads.remove((name, "covid"))
         return
+    
     sv.news_articles += update_news()
     sv.news_articles = sv.news_articles[::-1]
+    c.print("[red]NEWS UPDATE DONE")
 
 def schedule_news_updates(delay, prio, thread_name=""):
     scheduler.enter(delay, prio, get_updated_news_data, (thread_name, ))
