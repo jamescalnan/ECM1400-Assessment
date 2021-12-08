@@ -77,7 +77,6 @@ def start_thread(target=schedule_covid_updates, seconds_till_update: float = 5, 
                  thread_type: str = ''):
     threading.Thread(target=target,
                      args=(seconds_till_update,
-                           1,
                            update_name),
                      name=update_name + thread_type).start()
     logging.info("Thread started.")

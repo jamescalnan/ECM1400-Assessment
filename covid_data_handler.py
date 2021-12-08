@@ -76,15 +76,15 @@ def process_covid_csv_data(covid_csv_data):
     """
     logging.info("Attemping to process CSV data.")
     start_idx = starting_index(covid_csv_data, 6, 1)
-    last7days_cases = "{:,}".format(sum([int(covid_csv_data[x + 1][6])
-                                         for x in range(start_idx, start_idx + 7)]))
+    last7days_cases = sum([int(covid_csv_data[x + 1][6])
+                           for x in range(start_idx, start_idx + 7)])
 
     start_idx = starting_index(covid_csv_data, 5, 1)
-    current_hospital_cases = ("{:,}".format(int(covid_csv_data[start_idx - 1][5]))
+    current_hospital_cases = ((int(covid_csv_data[start_idx - 1][5]))
                               if start_idx is not None else "No Data")
 
     start_idx = starting_index(covid_csv_data, 4, 1)
-    total_deaths = ("{:,}".format(int(covid_csv_data[start_idx][4]))
+    total_deaths = ((int(covid_csv_data[start_idx][4]))
                     if start_idx is not None else "No Data")
     logging.info("CSV data parsed")
     return last7days_cases, current_hospital_cases, total_deaths
@@ -139,6 +139,6 @@ def get_covid_data(name):
 
     logging.info("COVID-19 data updated.")
 
-def schedule_covid_updates(delay, prio, thread_name):
-    scheduler.enter(delay, prio, get_covid_data, (thread_name,))
+def schedule_covid_updates(update_interval, update_name):
+    scheduler.enter(update_interval, 1, get_covid_data, (update_name,))
     scheduler.run()

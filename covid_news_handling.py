@@ -97,8 +97,8 @@ def get_updated_news_data(name):
     logging.info("COVID-19 data updated.")
 
 
-def schedule_news_updates(delay, prio, thread_name=""):
-    scheduler.enter(delay, prio, get_updated_news_data, (thread_name,))
+def schedule_news_updates(update_interval, update_name):
+    scheduler.enter(update_interval, 1, get_updated_news_data, (update_name,))
     scheduler.run()
 
 logging.info("News articles initialised.")
