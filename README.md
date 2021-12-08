@@ -1,2 +1,4 @@
 # ECM1400 Assessment
- Covid Dashboard project
+ COVID-19 Dashboard project for module ECM1400
+ 
+ 

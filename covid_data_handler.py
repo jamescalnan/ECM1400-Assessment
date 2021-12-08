@@ -1,25 +1,33 @@
 import csv
-import time
-import sched
 import json
+import sched
+import time
+import logging
+
 from rich.console import Console
 from uk_covid19 import Cov19API
+
 import sv
 
-c= Console()
+c = Console()
 scheduler = sched.scheduler(time.time,
                             time.sleep)
 
+
 def infections(data: list):
-    return data[0]#[0]
+    return data[0]  # [0]
+
 
 def hospital(data: list):
-    return data[1]#[1]
+    return data[1]  # [1]
+
 
 def deaths(data: list):
-    return data[2]#[2]
+    return data[2]  # [2]
+
 
 def parse_csv_data(csv_filename):
+    logging.info("Parsing CSV data.")
     """Parses CSV data
 
     Args:
@@ -48,15 +56,6 @@ def get_total_deaths(data, increment):
 
 
 def starting_index(data, col, increment):
-    """Gets the starting index when to start looking at the data
-
-    Args:
-        data (list): CSV data
-        x (int): Used for recursion
-
-    Returns:
-        int: Starting index
-    """
     if increment + 2 > len(data):
         return None
     if data[increment + 1][col] != '':
@@ -75,6 +74,7 @@ def process_covid_csv_data(covid_csv_data):
         int: The current hospital cases
         int: The current total deaths
     """
+    logging.info("Attemping to process CSV data.")
     start_idx = starting_index(covid_csv_data, 6, 1)
     last7days_cases = "{:,}".format(sum([int(covid_csv_data[x + 1][6])
                                          for x in range(start_idx, start_idx + 7)]))
@@ -86,12 +86,12 @@ def process_covid_csv_data(covid_csv_data):
     start_idx = starting_index(covid_csv_data, 4, 1)
     total_deaths = ("{:,}".format(int(covid_csv_data[start_idx][4]))
                     if start_idx is not None else "No Data")
-
+    logging.info("CSV data parsed")
     return last7days_cases, current_hospital_cases, total_deaths
 
 
-def covid_API_request(location: str=json.loads(open("config.json", encoding="utf8").read())['location'],
-                      location_type: str=json.loads(open("config.json", encoding="utf8").read())['location_type']):
+def covid_API_request(location: str = json.loads(open("config.json", encoding="utf8").read())['location'],
+                      location_type: str = json.loads(open("config.json", encoding="utf8").read())['location_type']):
     """Makes a request to the Cov19API
 
     Args:
@@ -106,40 +106,39 @@ def covid_API_request(location: str=json.loads(open("config.json", encoding="utf
         f'areaName={location}'
     ]
 
-    struct = {"areaCode" : "areaCode",
-        "areaName" : "areaName",
-        "areaType" : "areaType",
-        "date" : "date",
-        "cumDailyNsoDeathsByDeathDate" : "cumDailyNsoDeathsByDeathDate",
-        "hospitalCases" : "hospitalCases",
-        "newCasesBySpecimenDate" : "newCasesBySpecimenDate"}
-
+    struct = {"areaCode": "areaCode",
+              "areaName": "areaName",
+              "areaType": "areaType",
+              "date": "date",
+              "cumDailyNsoDeathsByDeathDate": "cumDailyNsoDeathsByDeathDate",
+              "hospitalCases": "hospitalCases",
+              "newCasesBySpecimenDate": "newCasesBySpecimenDate"}
+    logging.info("Attemping COVID-19 API call.")
     api = Cov19API(filters=england_only, structure=struct)
     data = api.get_csv()
+    logging.info("Successful COVID-19 API call.")
     return [row.split(",") for row in data.split("\n")][1:][:-1]
 
 
 def get_covid_data(name):
     if (name, "covid") in sv.cancelled_threads:
         sv.cancelled_threads.remove((name, "covid"))
+        logging.info("Cancelled thread executed.")
         return
 
     local_data = covid_API_request()
     national_data = covid_API_request(json.loads(open("config.json", encoding="utf8").read())['nation'], 'nation')
-    
+
     local_data = process_covid_csv_data(local_data)
     national_data = process_covid_csv_data(national_data)
 
-
     sv.covid_data.append((infections(local_data),
-                         infections(national_data),
-                         hospital(national_data),
-                         deaths(national_data)))
+                          infections(national_data),
+                          hospital(national_data),
+                          deaths(national_data)))
 
-    c.print("[red]UPDATE DONE")
-    c.print(f"NEW DATA: {sv.covid_data}")
-
+    logging.info("COVID-19 data updated.")
 
 def schedule_covid_updates(delay, prio, thread_name):
-    scheduler.enter(delay, prio, get_covid_data, (thread_name, ))
+    scheduler.enter(delay, prio, get_covid_data, (thread_name,))
     scheduler.run()

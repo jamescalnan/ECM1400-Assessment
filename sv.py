@@ -1,4 +1,4 @@
-#shared variables
+# shared variables
 
 news_articles = []
 update_queue = []
