@@ -1,6 +1,7 @@
+from rich.console import Console
+
 from covid_data_handler import *
 from covid_news_handling import *
-from rich.console import Console
 
 c = Console()
 
