@@ -4,11 +4,10 @@ import sched
 import time
 
 import requests
+from rich.console import Console
 
 import api_keys
 import sv
-
-from rich.console import Console
 
 c = Console()
 
@@ -20,19 +19,23 @@ removed_articles = []
 
 
 def news_API_request(covid_terms: str = json.loads(open("config.json", encoding="utf8").read())['news_terms'],
-                     increment: bool = True, test:bool=False):
+                     increment: bool = True, test: bool = False):
     """Makes request to news API
 
     Args:
         covid_terms (str, optional): Takes in the articles as a string
         Defaults to 'Covid COVID-19 coronavirus'.
+        incement (bool): Checking if the page number needs to be incremented
+        Defaults to True
+        test (bool): Checks if a test is running
+        Defaults to False
         
     Returns:
         list: Returns a list of dictionary items of articles
     """
     # Add one to the sv.page variable so that when an API call is made
     # different results are returned
-    
+
     url = ('https://newsapi.org/v2/everything?'
            f'q={covid_terms}&'
            'sortBy=popularity&'
@@ -147,6 +150,7 @@ def schedule_news_updates(update_interval, update_name):
     scheduler.enter(update_interval, 1, get_updated_news_data, (update_name,))
     # Run the scheduler
     scheduler.run()
+
 
 # Initialise the news articles
 logging.info("News articles initialised.")

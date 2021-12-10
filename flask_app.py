@@ -1,9 +1,8 @@
 import datetime
 import threading
-import json
-import pytest
 
 import flask
+import pytest
 from flask import Flask, render_template, request
 from flask.helpers import url_for
 from rich.console import Console
@@ -77,7 +76,7 @@ def get_seconds_till_update(ut: str):
     return (wanted_time - current_time).total_seconds(), wanted_time
 
 
-def update_elapsed(updated_time: datetime=datetime.datetime.now()):
+def update_elapsed(updated_time: datetime = datetime.datetime.now()):
     """Checks if the update has elapsed
 
     Args:
@@ -148,6 +147,7 @@ def do_tests():
         # Log the result
         logging.info("All tests passed")
 
+
 @app.route("/index", methods=["POST", "GET"])
 def home():
     """The home route
@@ -175,7 +175,7 @@ def home():
 
         # Add the name and type to the cancelled threads list
         sv.cancelled_threads.append((update_to_be_removed, update_type.lower()))
-        #Update the update queue to remove the item
+        # Update the update queue to remove the item
         sv.update_queue = [item for item in sv.update_queue if
                            not (item['name'] == update_to_be_removed and item['type'] == update_type)]
         logging.info("Update queue updated.")
@@ -205,7 +205,7 @@ def home():
             # Start the thread
             start_thread(schedule_covid_updates, seconds_till_update, update_name)
 
-        #Check if its a news update
+        # Check if its a news update
         if news_update:
             logging.info("Attemping to add to update queue.")
             # Enqueue the update
@@ -213,7 +213,7 @@ def home():
             logging.info("Attemping to start thread.")
             # Start the thread
             start_thread(schedule_news_updates, seconds_till_update, update_name)
-        
+
         # Redirect the page
         return flask.redirect(request.path)
 

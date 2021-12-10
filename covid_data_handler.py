@@ -43,7 +43,7 @@ def get_total_deaths(data, increment):
     return data[increment][4]
 
 
-def starting_index(data:list, col:int, increment:int):
+def starting_index(data: list, col: int, increment: int):
     """Getting the first index where data appears in the COVID-19 daya
 
     Args:
@@ -75,7 +75,7 @@ def process_covid_csv_data(covid_csv_data):
     logging.info("Attemping to process CSV data.")
     # Get the starting index where data appears
     start_idx = starting_index(covid_csv_data, 6, 1)
-    #Get the sum of the cases in the last 7 days
+    # Get the sum of the cases in the last 7 days
     last7days_cases = sum([int(covid_csv_data[x + 1][6])
                            for x in range(start_idx, start_idx + 7) if covid_csv_data[x + 1][6].isnumeric()])
 
@@ -120,7 +120,7 @@ def covid_API_request(location: str = json.loads(open("config.json", encoding="u
               "cumDailyNsoDeathsByDeathDate": "cumDailyNsoDeathsByDeathDate",
               "hospitalCases": "hospitalCases",
               "newCasesBySpecimenDate": "newCasesBySpecimenDate"}
-    
+
     logging.info("Attemping COVID-19 API call.")
     # Make the API call
     api = Cov19API(filters=filters, structure=struct)
@@ -144,14 +144,14 @@ def get_covid_data(name):
         logging.info("Cancelled thread executed.")
         return
 
-    #Get the data for the local area that is defined inside of the config file
+    # Get the data for the local area that is defined inside of the config file
     local_data = covid_API_request()
     # Get the national data
     national_data = covid_API_request(json.loads(open("config.json", encoding="utf8").read())['nation'], 'nation')
 
-    #Parse the local data
+    # Parse the local data
     local_data = process_covid_csv_data(local_data)
-    #Parse the national data
+    # Parse the national data
     national_data = process_covid_csv_data(national_data)
 
     # Add the data to the list
@@ -163,7 +163,7 @@ def get_covid_data(name):
     logging.info("COVID-19 data updated.")
 
 
-def schedule_covid_updates(update_interval:float, update_name:str = "", test=False):
+def schedule_covid_updates(update_interval: float, update_name: str = "", test=False):
     """Schedule updates for covid
 
     Args:
