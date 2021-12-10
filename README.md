@@ -108,6 +108,9 @@
  James Calnan
  jdc235@exeter.ac.uk
  
+ ## Github
+ https://github.com/jamescalnan/ECM1400-Assessment/
+
  ## Specification
  https://vle.exeter.ac.uk/pluginfile.php/2954508/mod_label/intro/CA-specification.pdf
  
