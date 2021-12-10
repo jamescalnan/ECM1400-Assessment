@@ -24,38 +24,38 @@
 
 ---
 
- ##Running the program
+ ## Running the program
 
- ####Python Version
+ #### Python Version
  This program is intended to be run on Python 3.9 64 bit
 
- ####Required Modules
+ #### Required Modules
  The required modules for this program can be installed using pip.
  Running `pip -r requirements.txt` inside the project folder will install
  the required modules.
 
- ####Personalising the dashboard
+ #### Personalising the dashboard
  You can personalise the dashboard by changing the contents of the `config.json` file.
  Inside the file you can change the location that COVID-19 data is retrieved from.
  You can also change the search terms for the news articles.
 
- ####API Keys
+ #### API Keys
  Inside the `config.json` file you will need to change the api key.
  If you go to the [News API](https://newsapi.org/) website you will be able to make
  an account and get your own API key. This key will then need to be put into the 
  `config.json` file.
 
- ####Logging
+ #### Logging
  All runtime errors will be logged inside the log file. The default save location for the logging
  file will be inside the main project folder. This can be changed in the `config.json` file.
 
- ####Testing
+ #### Testing
  The projects testing files can be tested using the pytest module. These tests can be run 
  by typing `pytest` in a terminal in the root directory. This module will then automatically
  find python files that have a suffix of '_test.py' and run the assertions inside them.
 
  # Project documentation
- #####Standard python modules:
+ ##### Standard python modules:
  - [sched](https://docs.python.org/3/library/sched.html)
  - [os](https://docs.python.org/3/library/os.html)
  - [time](https://docs.python.org/3/library/time.html)
@@ -63,14 +63,14 @@
  - [json](https://docs.python.org/3/library/json.html)
  - [csv](https://docs.python.org/3/library/csv.html)
 
- #####Third-party python modules:
+ ##### Third-party python modules:
  - [uk_covid19](https://publichealthengland.github.io/coronavirus-dashboard-api-python-sdk/)
  - [requests](https://pypi.org/project/requests/)
  - [pytest](https://docs.pytest.org/en/6.2.x/)
  - [flask](https://flask.palletsprojects.com/en/2.0.x/)
  - [rich](https://github.com/willmcgugan/rich)
 
- ###Function descriptions
+ ### Function descriptions
 
  covid_data_handler.py
  - parse_csv_data: This will interpret the csv data and return it in 
@@ -104,7 +104,7 @@
  - start_thread: This function will start a thread
  - do_tests: This function will run the pytest module and log the result
  
- ##Author
+ ## Author
  James Calnan
  jdc235@exeter.ac.uk
  
