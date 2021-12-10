@@ -2,5 +2,9 @@
     "location" : "Exeter",
     "location_type" : "ltla",
     "nation" : "england",
-    "news_terms" : "Covid COVID-19 coronavirus"
+    "news_terms" : "Covid COVID-19 coronavirus",
+    "log_file_path" : "covid_dashboard_log.log",
+    "api_keys" : {
+        "news_api_key" : "ef2e0d24af4f471bbd9d1b34c01d1360"
+    }
 }

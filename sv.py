@@ -1,7 +1,7 @@
-# shared variables
+# Shared variables
 
 news_articles = []
 update_queue = []
 cancelled_threads = []
 covid_data = []
-page = 0
+page = 1

@@ -4,12 +4,11 @@ import logging
 import sched
 import time
 
-from rich.console import Console
 from uk_covid19 import Cov19API
 
 import sv
 
-c = Console()
+# Initialise the scheduler
 scheduler = sched.scheduler(time.time,
                             time.sleep)
 

@@ -1,5 +1,6 @@
 import datetime
 import threading
+import json
 
 import flask
 from flask import Flask, render_template, request
@@ -19,7 +20,7 @@ for handler in logging.root.handlers[:]:
 
 # Initialise the log file
 logging.basicConfig(
-    filename='out.log',
+    filename=json.loads(open("config.json", encoding="utf8").read())['log_file_path'],
     level=logging.INFO,
     format='%(asctime)s %(message)s',
     datefmt='%m/%d/%Y %I:%M:%S %p')

@@ -4,13 +4,11 @@ import sched
 import time
 
 import requests
-from rich.console import Console
 
 import api_keys
 import sv
 
-c = Console()
-
+# Initialise the scheduler
 scheduler = sched.scheduler(time.time,
                             time.sleep)
 
@@ -30,12 +28,12 @@ def news_API_request(covid_terms: str = json.loads(open("config.json", encoding=
     """
     # Add one to the sv.page variable so that when an API call is made
     # different results are returned
-    sv.page += 1 if increment else 0
     url = ('https://newsapi.org/v2/everything?'
            f'q={covid_terms}&'
            'sortBy=popularity&'
            f'page={sv.page}&'
            f'apiKey={api_keys.NEWS_API_KEY}')
+    sv.page += 1 if increment else 0
 
     # Make API request
     logging.info("Attemping to make News API call.")

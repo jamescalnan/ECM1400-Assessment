@@ -1,0 +1,47 @@
+12/09/2021 04:29:38 PM Attemping COVID-19 API call.
+12/09/2021 04:29:39 PM Successful COVID-19 API call.
+12/09/2021 04:29:39 PM Attemping to process CSV data.
+12/09/2021 04:29:39 PM CSV data parsed
+12/09/2021 04:29:39 PM Attemping COVID-19 API call.
+12/09/2021 04:29:39 PM Successful COVID-19 API call.
+12/09/2021 04:29:39 PM Attemping to process CSV data.
+12/09/2021 04:29:39 PM CSV data parsed
+12/09/2021 04:29:39 PM Variables initialised successfully.
+12/09/2021 04:29:39 PM  * Restarting with stat
+12/09/2021 04:29:40 PM Attemping COVID-19 API call.
+12/09/2021 04:29:40 PM Successful COVID-19 API call.
+12/09/2021 04:29:40 PM Attemping to process CSV data.
+12/09/2021 04:29:40 PM CSV data parsed
+12/09/2021 04:29:40 PM Attemping COVID-19 API call.
+12/09/2021 04:29:40 PM Successful COVID-19 API call.
+12/09/2021 04:29:40 PM Attemping to process CSV data.
+12/09/2021 04:29:40 PM CSV data parsed
+12/09/2021 04:29:40 PM Variables initialised successfully.
+12/09/2021 04:29:40 PM  * Debugger is active!
+12/09/2021 04:29:40 PM  * Debugger PIN: 831-302-637
+12/09/2021 04:29:40 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/09/2021 04:34:32 PM Attemping COVID-19 API call.
+12/09/2021 04:34:32 PM Successful COVID-19 API call.
+12/09/2021 04:34:32 PM Attemping to process CSV data.
+12/09/2021 04:34:32 PM CSV data parsed
+12/09/2021 04:34:32 PM Attemping COVID-19 API call.
+12/09/2021 04:34:33 PM Successful COVID-19 API call.
+12/09/2021 04:34:33 PM Attemping to process CSV data.
+12/09/2021 04:34:33 PM CSV data parsed
+12/09/2021 04:34:33 PM Variables initialised successfully.
+12/09/2021 04:34:33 PM  * Restarting with stat
+12/09/2021 04:34:34 PM Attemping COVID-19 API call.
+12/09/2021 04:34:34 PM Successful COVID-19 API call.
+12/09/2021 04:34:34 PM Attemping to process CSV data.
+12/09/2021 04:34:34 PM CSV data parsed
+12/09/2021 04:34:34 PM Attemping COVID-19 API call.
+12/09/2021 04:34:34 PM Successful COVID-19 API call.
+12/09/2021 04:34:34 PM Attemping to process CSV data.
+12/09/2021 04:34:34 PM CSV data parsed
+12/09/2021 04:34:34 PM Variables initialised successfully.
+12/09/2021 04:34:34 PM  * Debugger is active!
+12/09/2021 04:34:34 PM  * Debugger PIN: 831-302-637
+12/09/2021 04:34:34 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/09/2021 04:34:36 PM Rendering flask template.
+12/09/2021 04:34:36 PM 127.0.0.1 - - [09/Dec/2021 16:34:36] "GET /index HTTP/1.1" 200 -
+12/09/2021 04:34:36 PM 127.0.0.1 - - [09/Dec/2021 16:34:36] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -

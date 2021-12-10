@@ -1,8 +1,10 @@
 import json
 import os.path
 
+
 def test_config_file_exists():
     assert os.path.exists('config.json')
+
 
 def test_config_contents():
     data = json.loads(open("config.json", encoding="utf8").read())
