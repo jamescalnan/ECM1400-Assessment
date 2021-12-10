@@ -5,12 +5,15 @@ import sched
 import time
 
 from uk_covid19 import Cov19API
+from rich.console import Console
 
 import sv
 
 # Initialise the scheduler
 scheduler = sched.scheduler(time.time,
                             time.sleep)
+
+c = Console()
 
 
 def parse_csv_data(csv_filename):
@@ -54,9 +57,9 @@ def starting_index(data: list, col: int, increment: int):
     Returns:
         int: The first idnex where data valid appears
     """
-    if increment + 2 > len(data):
+    if increment + 3 > len(data):
         return None
-    if data[increment + 1][col] != '':
+    if not (data[increment + 1][col] == ''):
         return increment + 1
     return starting_index(data, col, increment + 1)
 
@@ -72,24 +75,27 @@ def process_covid_csv_data(covid_csv_data):
         int: The current hospital cases
         int: The current total deaths
     """
+    if not isinstance(covid_csv_data, list):
+        return None, None, None
     logging.info("Attemping to process CSV data.")
     # Get the starting index where data appears
-    start_idx = starting_index(covid_csv_data, 6, 1)
-    # Get the sum of the cases in the last 7 days
+    start_idx = starting_index(covid_csv_data[1:], 6, -1)
+    # Get the sum of the cases in the last 7 days 
     last7days_cases = sum([int(covid_csv_data[x + 1][6])
-                           for x in range(start_idx, start_idx + 7) if covid_csv_data[x + 1][6].isnumeric()])
+                           for x in range(start_idx + 1, start_idx + 8)
+                           if covid_csv_data[x + 1][6].isnumeric()])
 
     # Get the starting index where data appears
-    start_idx = starting_index(covid_csv_data, 5, 1)
+    start_idx = starting_index(covid_csv_data[1:], 5, -1)
     # Get the current amount of hospital cases
     # if there is no data then it is set to 'No data'
-    current_hospital_cases = ((int(covid_csv_data[start_idx - 1][5]))
+    current_hospital_cases = ((int(covid_csv_data[start_idx + 1][5]))
                               if start_idx is not None else "No Data")
 
     # Get the starting index where data appears
-    start_idx = starting_index(covid_csv_data, 4, 1)
+    start_idx = starting_index(covid_csv_data[1:], 4, -1)
     # Get the current amount of deaths
-    total_deaths = ((int(covid_csv_data[start_idx][4]))
+    total_deaths = ((int(covid_csv_data[start_idx + 1][4]))
                     if start_idx is not None else "No Data")
     logging.info("CSV data parsed")
     return last7days_cases, current_hospital_cases, total_deaths
