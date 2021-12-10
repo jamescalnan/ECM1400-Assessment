@@ -102,6 +102,7 @@
  - update_elapsed: This function will check to see if an update has elapsed
  - enqueue_update: This function will enqueue an update in update queue
  - start_thread: This function will start a thread
+ - do_tests: This function will run the pytest module and log the result
  
  ##Author
  James Calnan

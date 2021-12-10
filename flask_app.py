@@ -1,19 +1,21 @@
 import datetime
 import threading
 import json
+import pytest
 
 import flask
 from flask import Flask, render_template, request
 from flask.helpers import url_for
+from rich.console import Console
 
 from covid_data_handler import *
 from covid_news_handling import *
 
+c = Console()
+
 # Initialise data from the config file
 NATION = json.loads(open("config.json", encoding="utf8").read())['nation']
 LOCATION = json.loads(open("config.json", encoding="utf8").read())['location']
-
-c = Console()
 
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
@@ -31,9 +33,7 @@ national_data = process_covid_csv_data(covid_API_request(NATION, "nation"))
 # Initialise the data in the sv.covid_data variable
 sv.covid_data = [(local_data[0], national_data[0], national_data[1], national_data[2], "INIT")]
 
-
 logging.info("Variables initialised successfully.")
-
 
 app = Flask(__name__)
 
@@ -137,12 +137,28 @@ def start_thread(target=schedule_covid_updates,
     logging.info("Thread started.")
 
 
+def do_tests():
+    # Run the tests
+    result = pytest.main()
+    # If the test has failed
+    if str(result) == "ExitCode.TESTS_FAILED":
+        # Put a warning in the log
+        logging.warning("A test as failed, please fix ASAP")
+    elif str(result) == "ExitCode.OK":
+        # Log the result
+        logging.info("All tests passed")
+
 @app.route("/index", methods=["POST", "GET"])
 def home():
     """The home route
 
     """
-    
+
+    # Every 120 page updates run the tests
+    if sv.page_updates % 120:
+        # Start a thread to run the test so that the page doesn't hang
+        threading.Thread(target=do_tests).start()
+
     # If the user has tried to remove an item from the news list
     if "notif" in request.args:
         # Call the remove_article function 
@@ -248,6 +264,7 @@ def home():
             logging.info("No updates elapsed.")
 
     logging.info("Rendering flask template.")
+    sv.page_updates += 1
     # Render the flask template
     return render_template(
         "index.html",

@@ -45,3 +45,1041 @@
 12/09/2021 04:34:36 PM Rendering flask template.
 12/09/2021 04:34:36 PM 127.0.0.1 - - [09/Dec/2021 16:34:36] "GET /index HTTP/1.1" 200 -
 12/09/2021 04:34:36 PM 127.0.0.1 - - [09/Dec/2021 16:34:36] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:09:09 AM Attemping COVID-19 API call.
+12/10/2021 01:09:10 AM Successful COVID-19 API call.
+12/10/2021 01:09:10 AM Attemping to process CSV data.
+12/10/2021 01:09:10 AM CSV data parsed
+12/10/2021 01:09:10 AM Attemping COVID-19 API call.
+12/10/2021 01:09:10 AM Successful COVID-19 API call.
+12/10/2021 01:09:10 AM Attemping to process CSV data.
+12/10/2021 01:09:10 AM CSV data parsed
+12/10/2021 01:09:10 AM Variables initialised successfully.
+12/10/2021 01:09:11 AM Parsing CSV data.
+12/10/2021 01:09:11 AM Parsing CSV data.
+12/10/2021 01:09:11 AM Attemping to process CSV data.
+12/10/2021 01:09:11 AM CSV data parsed
+12/10/2021 01:09:11 AM Attemping COVID-19 API call.
+12/10/2021 01:09:11 AM Successful COVID-19 API call.
+12/10/2021 01:09:11 AM Attemping COVID-19 API call.
+12/10/2021 01:09:11 AM Successful COVID-19 API call.
+12/10/2021 01:09:11 AM Attemping to make News API call.
+12/10/2021 01:09:11 AM Successful News API call.
+12/10/2021 01:09:11 AM Attemping to make News API call.
+12/10/2021 01:09:12 AM Successful News API call.
+12/10/2021 01:09:12 AM Attemping to make News API call.
+12/10/2021 01:09:13 AM Updating news list.
+12/10/2021 01:09:13 AM Attemping to make News API call.
+12/10/2021 01:09:13 AM Successful News API call.
+12/10/2021 01:09:13 AM Attemping to make News API call.
+12/10/2021 01:09:13 AM Successful News API call.
+12/10/2021 01:09:14 AM  * Restarting with stat
+12/10/2021 01:09:15 AM Attemping COVID-19 API call.
+12/10/2021 01:09:15 AM Successful COVID-19 API call.
+12/10/2021 01:09:15 AM Attemping to process CSV data.
+12/10/2021 01:09:15 AM CSV data parsed
+12/10/2021 01:09:15 AM Attemping COVID-19 API call.
+12/10/2021 01:09:15 AM Successful COVID-19 API call.
+12/10/2021 01:09:15 AM Attemping to process CSV data.
+12/10/2021 01:09:15 AM CSV data parsed
+12/10/2021 01:09:15 AM Variables initialised successfully.
+12/10/2021 01:09:16 AM Parsing CSV data.
+12/10/2021 01:09:16 AM Parsing CSV data.
+12/10/2021 01:09:16 AM Attemping to process CSV data.
+12/10/2021 01:09:16 AM CSV data parsed
+12/10/2021 01:09:16 AM Attemping COVID-19 API call.
+12/10/2021 01:09:16 AM Successful COVID-19 API call.
+12/10/2021 01:09:16 AM Attemping COVID-19 API call.
+12/10/2021 01:09:16 AM Successful COVID-19 API call.
+12/10/2021 01:09:16 AM Attemping to make News API call.
+12/10/2021 01:09:17 AM Successful News API call.
+12/10/2021 01:09:17 AM Attemping to make News API call.
+12/10/2021 01:09:17 AM Successful News API call.
+12/10/2021 01:09:17 AM Attemping to make News API call.
+12/10/2021 01:09:18 AM Updating news list.
+12/10/2021 01:09:18 AM Attemping to make News API call.
+12/10/2021 01:09:18 AM Successful News API call.
+12/10/2021 01:09:18 AM Attemping to make News API call.
+12/10/2021 01:09:18 AM Successful News API call.
+12/10/2021 01:09:18 AM  * Debugger is active!
+12/10/2021 01:09:18 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:09:18 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:11:02 AM Attemping COVID-19 API call.
+12/10/2021 01:11:03 AM Successful COVID-19 API call.
+12/10/2021 01:11:03 AM Attemping to process CSV data.
+12/10/2021 01:11:03 AM CSV data parsed
+12/10/2021 01:11:03 AM Attemping COVID-19 API call.
+12/10/2021 01:11:03 AM Successful COVID-19 API call.
+12/10/2021 01:11:03 AM Attemping to process CSV data.
+12/10/2021 01:11:03 AM CSV data parsed
+12/10/2021 01:11:03 AM Variables initialised successfully.
+12/10/2021 01:11:03 AM Parsing CSV data.
+12/10/2021 01:11:03 AM Parsing CSV data.
+12/10/2021 01:11:03 AM Attemping to process CSV data.
+12/10/2021 01:11:03 AM CSV data parsed
+12/10/2021 01:11:03 AM Attemping COVID-19 API call.
+12/10/2021 01:11:04 AM Successful COVID-19 API call.
+12/10/2021 01:11:04 AM Attemping COVID-19 API call.
+12/10/2021 01:11:04 AM Successful COVID-19 API call.
+12/10/2021 01:11:04 AM Attemping to make News API call.
+12/10/2021 01:11:04 AM Successful News API call.
+12/10/2021 01:11:04 AM Attemping to make News API call.
+12/10/2021 01:11:05 AM Successful News API call.
+12/10/2021 01:11:05 AM Attemping to make News API call.
+12/10/2021 01:11:05 AM Updating news list.
+12/10/2021 01:11:05 AM Attemping to make News API call.
+12/10/2021 01:11:05 AM Successful News API call.
+12/10/2021 01:11:05 AM Attemping to make News API call.
+12/10/2021 01:11:06 AM Successful News API call.
+12/10/2021 01:11:06 AM  * Restarting with stat
+12/10/2021 01:11:07 AM Attemping COVID-19 API call.
+12/10/2021 01:11:07 AM Successful COVID-19 API call.
+12/10/2021 01:11:07 AM Attemping to process CSV data.
+12/10/2021 01:11:07 AM CSV data parsed
+12/10/2021 01:11:07 AM Attemping COVID-19 API call.
+12/10/2021 01:11:08 AM Successful COVID-19 API call.
+12/10/2021 01:11:08 AM Attemping to process CSV data.
+12/10/2021 01:11:08 AM CSV data parsed
+12/10/2021 01:11:08 AM Variables initialised successfully.
+12/10/2021 01:11:08 AM Parsing CSV data.
+12/10/2021 01:11:08 AM Parsing CSV data.
+12/10/2021 01:11:08 AM Attemping to process CSV data.
+12/10/2021 01:11:08 AM CSV data parsed
+12/10/2021 01:11:08 AM Attemping COVID-19 API call.
+12/10/2021 01:11:08 AM Successful COVID-19 API call.
+12/10/2021 01:11:08 AM Attemping COVID-19 API call.
+12/10/2021 01:11:08 AM Successful COVID-19 API call.
+12/10/2021 01:11:08 AM Attemping to make News API call.
+12/10/2021 01:11:09 AM Successful News API call.
+12/10/2021 01:11:09 AM Attemping to make News API call.
+12/10/2021 01:11:09 AM Successful News API call.
+12/10/2021 01:11:09 AM Attemping to make News API call.
+12/10/2021 01:11:09 AM Updating news list.
+12/10/2021 01:11:09 AM Attemping to make News API call.
+12/10/2021 01:11:10 AM Successful News API call.
+12/10/2021 01:11:10 AM Attemping to make News API call.
+12/10/2021 01:11:10 AM Successful News API call.
+12/10/2021 01:11:10 AM  * Debugger is active!
+12/10/2021 01:11:10 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:11:10 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:12:56 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\flask_app.py', reloading
+12/10/2021 01:12:56 AM  * Restarting with stat
+12/10/2021 01:12:58 AM Attemping COVID-19 API call.
+12/10/2021 01:12:59 AM Successful COVID-19 API call.
+12/10/2021 01:12:59 AM Attemping to process CSV data.
+12/10/2021 01:12:59 AM CSV data parsed
+12/10/2021 01:12:59 AM Attemping COVID-19 API call.
+12/10/2021 01:12:59 AM Successful COVID-19 API call.
+12/10/2021 01:12:59 AM Attemping to process CSV data.
+12/10/2021 01:12:59 AM CSV data parsed
+12/10/2021 01:12:59 AM Variables initialised successfully.
+12/10/2021 01:12:59 AM Parsing CSV data.
+12/10/2021 01:12:59 AM Parsing CSV data.
+12/10/2021 01:12:59 AM Attemping to process CSV data.
+12/10/2021 01:12:59 AM CSV data parsed
+12/10/2021 01:12:59 AM Attemping COVID-19 API call.
+12/10/2021 01:13:00 AM Successful COVID-19 API call.
+12/10/2021 01:13:00 AM Attemping COVID-19 API call.
+12/10/2021 01:13:00 AM Successful COVID-19 API call.
+12/10/2021 01:13:00 AM Attemping to make News API call.
+12/10/2021 01:13:00 AM Successful News API call.
+12/10/2021 01:13:00 AM Attemping to make News API call.
+12/10/2021 01:13:00 AM Successful News API call.
+12/10/2021 01:13:00 AM Attemping to make News API call.
+12/10/2021 01:13:01 AM Updating news list.
+12/10/2021 01:13:01 AM Attemping to make News API call.
+12/10/2021 01:13:01 AM Successful News API call.
+12/10/2021 01:13:01 AM Attemping to make News API call.
+12/10/2021 01:13:01 AM Successful News API call.
+12/10/2021 01:13:01 AM  * Debugger is active!
+12/10/2021 01:13:01 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:13:01 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:13:13 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\flask_app.py', reloading
+12/10/2021 01:13:13 AM  * Restarting with stat
+12/10/2021 01:13:15 AM Attemping COVID-19 API call.
+12/10/2021 01:13:15 AM Successful COVID-19 API call.
+12/10/2021 01:13:15 AM Attemping to process CSV data.
+12/10/2021 01:13:15 AM CSV data parsed
+12/10/2021 01:13:15 AM Attemping COVID-19 API call.
+12/10/2021 01:13:15 AM Successful COVID-19 API call.
+12/10/2021 01:13:15 AM Attemping to process CSV data.
+12/10/2021 01:13:15 AM CSV data parsed
+12/10/2021 01:13:15 AM Variables initialised successfully.
+12/10/2021 01:13:16 AM Parsing CSV data.
+12/10/2021 01:13:16 AM Parsing CSV data.
+12/10/2021 01:13:16 AM Attemping to process CSV data.
+12/10/2021 01:13:16 AM CSV data parsed
+12/10/2021 01:13:16 AM Attemping COVID-19 API call.
+12/10/2021 01:13:16 AM Successful COVID-19 API call.
+12/10/2021 01:13:16 AM Attemping COVID-19 API call.
+12/10/2021 01:13:16 AM Successful COVID-19 API call.
+12/10/2021 01:13:16 AM Attemping to make News API call.
+12/10/2021 01:13:17 AM Successful News API call.
+12/10/2021 01:13:17 AM Attemping to make News API call.
+12/10/2021 01:13:17 AM Successful News API call.
+12/10/2021 01:13:17 AM Attemping to make News API call.
+12/10/2021 01:13:17 AM Updating news list.
+12/10/2021 01:13:17 AM Attemping to make News API call.
+12/10/2021 01:13:18 AM Successful News API call.
+12/10/2021 01:13:18 AM Attemping to make News API call.
+12/10/2021 01:13:18 AM Successful News API call.
+12/10/2021 01:13:18 AM  * Debugger is active!
+12/10/2021 01:13:18 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:13:18 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:14:12 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\covid_test.py', reloading
+12/10/2021 01:14:12 AM  * Restarting with stat
+12/10/2021 01:14:14 AM Attemping COVID-19 API call.
+12/10/2021 01:14:14 AM Successful COVID-19 API call.
+12/10/2021 01:14:14 AM Attemping to process CSV data.
+12/10/2021 01:14:14 AM CSV data parsed
+12/10/2021 01:14:14 AM Attemping COVID-19 API call.
+12/10/2021 01:14:15 AM Successful COVID-19 API call.
+12/10/2021 01:14:15 AM Attemping to process CSV data.
+12/10/2021 01:14:15 AM CSV data parsed
+12/10/2021 01:14:15 AM Variables initialised successfully.
+12/10/2021 01:14:18 AM Attemping COVID-19 API call.
+12/10/2021 01:14:18 AM Successful COVID-19 API call.
+12/10/2021 01:14:18 AM Attemping to process CSV data.
+12/10/2021 01:14:18 AM CSV data parsed
+12/10/2021 01:14:18 AM Attemping COVID-19 API call.
+12/10/2021 01:14:18 AM Successful COVID-19 API call.
+12/10/2021 01:14:18 AM Attemping to process CSV data.
+12/10/2021 01:14:18 AM CSV data parsed
+12/10/2021 01:14:18 AM Variables initialised successfully.
+12/10/2021 01:14:19 AM Parsing CSV data.
+12/10/2021 01:14:19 AM Parsing CSV data.
+12/10/2021 01:14:19 AM Attemping to process CSV data.
+12/10/2021 01:14:19 AM CSV data parsed
+12/10/2021 01:14:19 AM Attemping COVID-19 API call.
+12/10/2021 01:14:19 AM Successful COVID-19 API call.
+12/10/2021 01:14:19 AM Attemping COVID-19 API call.
+12/10/2021 01:14:19 AM Successful COVID-19 API call.
+12/10/2021 01:14:19 AM Attemping to make News API call.
+12/10/2021 01:14:20 AM Successful News API call.
+12/10/2021 01:14:20 AM Attemping to make News API call.
+12/10/2021 01:14:20 AM Successful News API call.
+12/10/2021 01:14:20 AM Attemping to make News API call.
+12/10/2021 01:14:20 AM Updating news list.
+12/10/2021 01:14:20 AM Attemping to make News API call.
+12/10/2021 01:14:21 AM Successful News API call.
+12/10/2021 01:14:21 AM Attemping to make News API call.
+12/10/2021 01:14:22 AM Successful News API call.
+12/10/2021 01:14:47 AM Attemping COVID-19 API call.
+12/10/2021 01:14:48 AM Successful COVID-19 API call.
+12/10/2021 01:14:48 AM Attemping to process CSV data.
+12/10/2021 01:14:48 AM CSV data parsed
+12/10/2021 01:14:48 AM Attemping COVID-19 API call.
+12/10/2021 01:14:48 AM Successful COVID-19 API call.
+12/10/2021 01:14:48 AM Attemping to process CSV data.
+12/10/2021 01:14:48 AM CSV data parsed
+12/10/2021 01:14:48 AM Variables initialised successfully.
+12/10/2021 01:14:49 AM Parsing CSV data.
+12/10/2021 01:14:49 AM Parsing CSV data.
+12/10/2021 01:14:49 AM Attemping to process CSV data.
+12/10/2021 01:14:49 AM CSV data parsed
+12/10/2021 01:14:49 AM Attemping COVID-19 API call.
+12/10/2021 01:14:49 AM Successful COVID-19 API call.
+12/10/2021 01:14:49 AM Attemping COVID-19 API call.
+12/10/2021 01:14:49 AM Successful COVID-19 API call.
+12/10/2021 01:14:49 AM Attemping to make News API call.
+12/10/2021 01:14:50 AM Successful News API call.
+12/10/2021 01:14:50 AM Attemping to make News API call.
+12/10/2021 01:14:50 AM Successful News API call.
+12/10/2021 01:14:50 AM Attemping to make News API call.
+12/10/2021 01:14:50 AM Updating news list.
+12/10/2021 01:14:50 AM Attemping to make News API call.
+12/10/2021 01:14:50 AM Successful News API call.
+12/10/2021 01:14:50 AM Attemping to make News API call.
+12/10/2021 01:14:51 AM Successful News API call.
+12/10/2021 01:15:30 AM Attemping COVID-19 API call.
+12/10/2021 01:15:30 AM Successful COVID-19 API call.
+12/10/2021 01:15:30 AM Attemping to process CSV data.
+12/10/2021 01:15:30 AM CSV data parsed
+12/10/2021 01:15:30 AM Attemping COVID-19 API call.
+12/10/2021 01:15:30 AM Successful COVID-19 API call.
+12/10/2021 01:15:30 AM Attemping to process CSV data.
+12/10/2021 01:15:30 AM CSV data parsed
+12/10/2021 01:15:30 AM Variables initialised successfully.
+12/10/2021 01:15:31 AM Parsing CSV data.
+12/10/2021 01:15:31 AM Parsing CSV data.
+12/10/2021 01:15:31 AM Attemping to process CSV data.
+12/10/2021 01:15:31 AM CSV data parsed
+12/10/2021 01:15:31 AM Attemping COVID-19 API call.
+12/10/2021 01:15:31 AM Successful COVID-19 API call.
+12/10/2021 01:15:31 AM Attemping COVID-19 API call.
+12/10/2021 01:15:32 AM Successful COVID-19 API call.
+12/10/2021 01:15:32 AM Attemping to make News API call.
+12/10/2021 01:15:32 AM Successful News API call.
+12/10/2021 01:15:32 AM Attemping to make News API call.
+12/10/2021 01:15:32 AM Successful News API call.
+12/10/2021 01:15:32 AM Attemping to make News API call.
+12/10/2021 01:15:32 AM Updating news list.
+12/10/2021 01:15:32 AM Attemping to make News API call.
+12/10/2021 01:15:33 AM Successful News API call.
+12/10/2021 01:15:33 AM Attemping to make News API call.
+12/10/2021 01:15:33 AM Successful News API call.
+12/10/2021 01:18:16 AM Attemping COVID-19 API call.
+12/10/2021 01:18:16 AM Successful COVID-19 API call.
+12/10/2021 01:18:16 AM Attemping to process CSV data.
+12/10/2021 01:18:16 AM CSV data parsed
+12/10/2021 01:18:16 AM Attemping COVID-19 API call.
+12/10/2021 01:18:17 AM Successful COVID-19 API call.
+12/10/2021 01:18:17 AM Attemping to process CSV data.
+12/10/2021 01:18:17 AM CSV data parsed
+12/10/2021 01:18:17 AM Variables initialised successfully.
+12/10/2021 01:18:17 AM Parsing CSV data.
+12/10/2021 01:18:17 AM Parsing CSV data.
+12/10/2021 01:18:17 AM Attemping to process CSV data.
+12/10/2021 01:18:17 AM CSV data parsed
+12/10/2021 01:18:18 AM Attemping COVID-19 API call.
+12/10/2021 01:18:18 AM Successful COVID-19 API call.
+12/10/2021 01:18:18 AM Attemping COVID-19 API call.
+12/10/2021 01:18:18 AM Successful COVID-19 API call.
+12/10/2021 01:18:18 AM Attemping to make News API call.
+12/10/2021 01:18:19 AM Successful News API call.
+12/10/2021 01:18:19 AM Attemping to make News API call.
+12/10/2021 01:18:19 AM Successful News API call.
+12/10/2021 01:18:19 AM Attemping to make News API call.
+12/10/2021 01:18:19 AM Updating news list.
+12/10/2021 01:18:19 AM Attemping to make News API call.
+12/10/2021 01:18:19 AM Successful News API call.
+12/10/2021 01:18:19 AM Attemping to make News API call.
+12/10/2021 01:18:20 AM Successful News API call.
+12/10/2021 01:18:34 AM Attemping COVID-19 API call.
+12/10/2021 01:18:34 AM Successful COVID-19 API call.
+12/10/2021 01:18:34 AM Attemping to process CSV data.
+12/10/2021 01:18:34 AM CSV data parsed
+12/10/2021 01:18:34 AM Attemping COVID-19 API call.
+12/10/2021 01:18:34 AM Successful COVID-19 API call.
+12/10/2021 01:18:34 AM Attemping to process CSV data.
+12/10/2021 01:18:34 AM CSV data parsed
+12/10/2021 01:18:34 AM Variables initialised successfully.
+12/10/2021 01:18:34 AM Parsing CSV data.
+12/10/2021 01:18:35 AM Parsing CSV data.
+12/10/2021 01:18:35 AM Attemping to process CSV data.
+12/10/2021 01:18:35 AM CSV data parsed
+12/10/2021 01:18:35 AM Attemping COVID-19 API call.
+12/10/2021 01:18:35 AM Successful COVID-19 API call.
+12/10/2021 01:18:35 AM Attemping COVID-19 API call.
+12/10/2021 01:18:35 AM Successful COVID-19 API call.
+12/10/2021 01:18:35 AM Attemping to make News API call.
+12/10/2021 01:18:36 AM Successful News API call.
+12/10/2021 01:18:36 AM Attemping to make News API call.
+12/10/2021 01:18:36 AM Successful News API call.
+12/10/2021 01:18:36 AM Attemping to make News API call.
+12/10/2021 01:18:36 AM Updating news list.
+12/10/2021 01:18:36 AM Attemping to make News API call.
+12/10/2021 01:18:36 AM Successful News API call.
+12/10/2021 01:18:36 AM Attemping to make News API call.
+12/10/2021 01:18:37 AM Successful News API call.
+12/10/2021 01:19:34 AM Attemping COVID-19 API call.
+12/10/2021 01:19:35 AM Successful COVID-19 API call.
+12/10/2021 01:19:35 AM Attemping to process CSV data.
+12/10/2021 01:19:35 AM CSV data parsed
+12/10/2021 01:19:35 AM Attemping COVID-19 API call.
+12/10/2021 01:19:35 AM Successful COVID-19 API call.
+12/10/2021 01:19:35 AM Attemping to process CSV data.
+12/10/2021 01:19:35 AM CSV data parsed
+12/10/2021 01:19:35 AM Variables initialised successfully.
+12/10/2021 01:19:35 AM Parsing CSV data.
+12/10/2021 01:19:36 AM Parsing CSV data.
+12/10/2021 01:19:36 AM Attemping to process CSV data.
+12/10/2021 01:19:36 AM CSV data parsed
+12/10/2021 01:19:36 AM Attemping COVID-19 API call.
+12/10/2021 01:19:36 AM Successful COVID-19 API call.
+12/10/2021 01:19:36 AM Attemping COVID-19 API call.
+12/10/2021 01:19:36 AM Successful COVID-19 API call.
+12/10/2021 01:19:36 AM Attemping to make News API call.
+12/10/2021 01:19:37 AM Successful News API call.
+12/10/2021 01:19:37 AM Attemping to make News API call.
+12/10/2021 01:19:37 AM Successful News API call.
+12/10/2021 01:19:37 AM Attemping to make News API call.
+12/10/2021 01:19:38 AM Updating news list.
+12/10/2021 01:19:38 AM Attemping to make News API call.
+12/10/2021 01:19:38 AM Successful News API call.
+12/10/2021 01:19:38 AM Attemping to make News API call.
+12/10/2021 01:19:39 AM Successful News API call.
+12/10/2021 01:19:59 AM Attemping COVID-19 API call.
+12/10/2021 01:20:00 AM Successful COVID-19 API call.
+12/10/2021 01:20:00 AM Attemping to process CSV data.
+12/10/2021 01:20:00 AM CSV data parsed
+12/10/2021 01:20:00 AM Attemping COVID-19 API call.
+12/10/2021 01:20:00 AM Successful COVID-19 API call.
+12/10/2021 01:20:00 AM Attemping to process CSV data.
+12/10/2021 01:20:00 AM CSV data parsed
+12/10/2021 01:20:00 AM Variables initialised successfully.
+12/10/2021 01:20:00 AM Parsing CSV data.
+12/10/2021 01:20:00 AM Parsing CSV data.
+12/10/2021 01:20:00 AM Attemping to process CSV data.
+12/10/2021 01:20:00 AM CSV data parsed
+12/10/2021 01:20:00 AM Attemping COVID-19 API call.
+12/10/2021 01:20:01 AM Successful COVID-19 API call.
+12/10/2021 01:20:01 AM Attemping COVID-19 API call.
+12/10/2021 01:20:01 AM Successful COVID-19 API call.
+12/10/2021 01:20:01 AM Attemping to make News API call.
+12/10/2021 01:20:01 AM Successful News API call.
+12/10/2021 01:20:01 AM Attemping to make News API call.
+12/10/2021 01:20:02 AM Successful News API call.
+12/10/2021 01:20:02 AM Attemping to make News API call.
+12/10/2021 01:20:02 AM Updating news list.
+12/10/2021 01:20:02 AM Attemping to make News API call.
+12/10/2021 01:20:03 AM Successful News API call.
+12/10/2021 01:20:03 AM Attemping to make News API call.
+12/10/2021 01:20:03 AM Successful News API call.
+12/10/2021 01:21:44 AM Attemping COVID-19 API call.
+12/10/2021 01:21:45 AM Successful COVID-19 API call.
+12/10/2021 01:21:45 AM Attemping to process CSV data.
+12/10/2021 01:21:45 AM CSV data parsed
+12/10/2021 01:21:45 AM Attemping COVID-19 API call.
+12/10/2021 01:21:45 AM Successful COVID-19 API call.
+12/10/2021 01:21:45 AM Attemping to process CSV data.
+12/10/2021 01:21:45 AM CSV data parsed
+12/10/2021 01:21:45 AM Variables initialised successfully.
+12/10/2021 01:21:46 AM Parsing CSV data.
+12/10/2021 01:21:46 AM Parsing CSV data.
+12/10/2021 01:21:46 AM Attemping to process CSV data.
+12/10/2021 01:21:46 AM CSV data parsed
+12/10/2021 01:21:46 AM Attemping COVID-19 API call.
+12/10/2021 01:21:46 AM Successful COVID-19 API call.
+12/10/2021 01:21:46 AM Attemping COVID-19 API call.
+12/10/2021 01:21:46 AM Successful COVID-19 API call.
+12/10/2021 01:21:46 AM Attemping to make News API call.
+12/10/2021 01:21:46 AM Successful News API call.
+12/10/2021 01:21:46 AM Attemping to make News API call.
+12/10/2021 01:21:47 AM Successful News API call.
+12/10/2021 01:21:47 AM Attemping to make News API call.
+12/10/2021 01:21:47 AM Updating news list.
+12/10/2021 01:21:47 AM Attemping to make News API call.
+12/10/2021 01:21:48 AM Successful News API call.
+12/10/2021 01:21:48 AM Attemping to make News API call.
+12/10/2021 01:21:48 AM Successful News API call.
+12/10/2021 01:25:23 AM Attemping COVID-19 API call.
+12/10/2021 01:25:24 AM Successful COVID-19 API call.
+12/10/2021 01:25:24 AM Attemping to process CSV data.
+12/10/2021 01:25:24 AM CSV data parsed
+12/10/2021 01:25:24 AM Attemping COVID-19 API call.
+12/10/2021 01:25:24 AM Successful COVID-19 API call.
+12/10/2021 01:25:24 AM Attemping to process CSV data.
+12/10/2021 01:25:24 AM CSV data parsed
+12/10/2021 01:25:24 AM Variables initialised successfully.
+12/10/2021 01:25:24 AM  * Restarting with stat
+12/10/2021 01:25:26 AM Attemping COVID-19 API call.
+12/10/2021 01:25:26 AM Successful COVID-19 API call.
+12/10/2021 01:25:26 AM Attemping to process CSV data.
+12/10/2021 01:25:26 AM CSV data parsed
+12/10/2021 01:25:26 AM Attemping COVID-19 API call.
+12/10/2021 01:25:27 AM Successful COVID-19 API call.
+12/10/2021 01:25:27 AM Attemping to process CSV data.
+12/10/2021 01:25:27 AM CSV data parsed
+12/10/2021 01:25:27 AM Variables initialised successfully.
+12/10/2021 01:25:27 AM  * Debugger is active!
+12/10/2021 01:25:27 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:25:27 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:25:27 AM Rendering flask template.
+12/10/2021 01:25:27 AM 127.0.0.1 - - [10/Dec/2021 01:25:27] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:25:28 AM Parsing CSV data.
+12/10/2021 01:25:28 AM Parsing CSV data.
+12/10/2021 01:25:28 AM Attemping to process CSV data.
+12/10/2021 01:25:28 AM CSV data parsed
+12/10/2021 01:25:28 AM Attemping COVID-19 API call.
+12/10/2021 01:25:28 AM Successful COVID-19 API call.
+12/10/2021 01:25:28 AM Attemping COVID-19 API call.
+12/10/2021 01:25:29 AM Successful COVID-19 API call.
+12/10/2021 01:25:29 AM Attemping to make News API call.
+12/10/2021 01:25:30 AM Successful News API call.
+12/10/2021 01:25:30 AM Attemping to make News API call.
+12/10/2021 01:25:30 AM Successful News API call.
+12/10/2021 01:25:30 AM Attemping to make News API call.
+12/10/2021 01:25:31 AM Updating news list.
+12/10/2021 01:25:31 AM Attemping to make News API call.
+12/10/2021 01:25:31 AM Successful News API call.
+12/10/2021 01:25:31 AM Attemping to make News API call.
+12/10/2021 01:25:32 AM Successful News API call.
+12/10/2021 01:25:32 AM Tests passed
+12/10/2021 01:25:32 AM Rendering flask template.
+12/10/2021 01:25:32 AM 127.0.0.1 - - [10/Dec/2021 01:25:32] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:25:32 AM 127.0.0.1 - - [10/Dec/2021 01:25:32] "GET /static/images/covid19.png HTTP/1.1" 200 -
+12/10/2021 01:25:33 AM 127.0.0.1 - - [10/Dec/2021 01:25:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+12/10/2021 01:26:15 AM Attemping to add update(s) to update queue.
+12/10/2021 01:26:15 AM Time till update calculated.
+12/10/2021 01:26:15 AM Attemping to add to update queue.
+12/10/2021 01:26:15 AM Update added to update queue.
+12/10/2021 01:26:15 AM Attemping to start thread
+12/10/2021 01:26:15 AM Thread started.
+12/10/2021 01:26:15 AM Attemping to add to update queue.
+12/10/2021 01:26:15 AM Update added to update queue.
+12/10/2021 01:26:15 AM Attemping to start thread.
+12/10/2021 01:26:15 AM Thread started.
+12/10/2021 01:26:15 AM 127.0.0.1 - - [10/Dec/2021 01:26:15] "[32mGET /index?update=01%3A27&two=new&covid-data=covid-data&news=news HTTP/1.1[0m" 302 -
+12/10/2021 01:26:15 AM Attempting to find elapsed updates.
+12/10/2021 01:26:15 AM No updates elapsed.
+12/10/2021 01:26:15 AM Rendering flask template.
+12/10/2021 01:26:15 AM 127.0.0.1 - - [10/Dec/2021 01:26:15] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:26:16 AM 127.0.0.1 - - [10/Dec/2021 01:26:16] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:26:46 AM Parsing CSV data.
+12/10/2021 01:26:46 AM Parsing CSV data.
+12/10/2021 01:26:46 AM Attemping to process CSV data.
+12/10/2021 01:26:46 AM CSV data parsed
+12/10/2021 01:26:46 AM Attemping COVID-19 API call.
+12/10/2021 01:26:46 AM Successful COVID-19 API call.
+12/10/2021 01:26:46 AM Attemping COVID-19 API call.
+12/10/2021 01:26:46 AM Successful COVID-19 API call.
+12/10/2021 01:26:46 AM Attemping to make News API call.
+12/10/2021 01:26:47 AM Successful News API call.
+12/10/2021 01:26:47 AM Attemping to make News API call.
+12/10/2021 01:26:47 AM Updating news list.
+12/10/2021 01:26:47 AM Attemping to make News API call.
+12/10/2021 01:26:48 AM Successful News API call.
+12/10/2021 01:26:48 AM Attemping to make News API call.
+12/10/2021 01:26:48 AM Successful News API call.
+12/10/2021 01:26:49 AM A test as failed, please fix ASAP
+12/10/2021 01:26:49 AM Attempting to find elapsed updates.
+12/10/2021 01:26:49 AM No updates elapsed.
+12/10/2021 01:26:49 AM Rendering flask template.
+12/10/2021 01:26:49 AM 127.0.0.1 - - [10/Dec/2021 01:26:49] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:26:49 AM 127.0.0.1 - - [10/Dec/2021 01:26:49] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:27:00 AM Updating news list.
+12/10/2021 01:27:00 AM Attemping COVID-19 API call.
+12/10/2021 01:27:00 AM Attemping to make News API call.
+12/10/2021 01:27:00 AM Successful News API call.
+12/10/2021 01:27:01 AM Successful COVID-19 API call.
+12/10/2021 01:27:01 AM Attemping COVID-19 API call.
+12/10/2021 01:27:01 AM Successful COVID-19 API call.
+12/10/2021 01:27:01 AM Attemping to process CSV data.
+12/10/2021 01:27:01 AM CSV data parsed
+12/10/2021 01:27:01 AM Attemping to process CSV data.
+12/10/2021 01:27:01 AM CSV data parsed
+12/10/2021 01:27:01 AM COVID-19 data updated.
+12/10/2021 01:27:20 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\flask_app.py', reloading
+12/10/2021 01:27:20 AM  * Restarting with stat
+12/10/2021 01:27:22 AM Attemping COVID-19 API call.
+12/10/2021 01:27:22 AM Successful COVID-19 API call.
+12/10/2021 01:27:22 AM Attemping to process CSV data.
+12/10/2021 01:27:22 AM CSV data parsed
+12/10/2021 01:27:22 AM Attemping COVID-19 API call.
+12/10/2021 01:27:23 AM Successful COVID-19 API call.
+12/10/2021 01:27:23 AM Attemping to process CSV data.
+12/10/2021 01:27:23 AM CSV data parsed
+12/10/2021 01:27:23 AM Variables initialised successfully.
+12/10/2021 01:27:23 AM  * Debugger is active!
+12/10/2021 01:27:23 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:27:23 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:27:49 AM Rendering flask template.
+12/10/2021 01:27:49 AM 127.0.0.1 - - [10/Dec/2021 01:27:49] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:27:50 AM 127.0.0.1 - - [10/Dec/2021 01:27:50] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:28:40 AM Attemping COVID-19 API call.
+12/10/2021 01:28:41 AM Successful COVID-19 API call.
+12/10/2021 01:28:41 AM Attemping to process CSV data.
+12/10/2021 01:28:41 AM CSV data parsed
+12/10/2021 01:28:41 AM Attemping COVID-19 API call.
+12/10/2021 01:28:41 AM Successful COVID-19 API call.
+12/10/2021 01:28:41 AM Attemping to process CSV data.
+12/10/2021 01:28:41 AM CSV data parsed
+12/10/2021 01:28:41 AM Variables initialised successfully.
+12/10/2021 01:28:41 AM  * Restarting with stat
+12/10/2021 01:28:43 AM Attemping COVID-19 API call.
+12/10/2021 01:28:43 AM Successful COVID-19 API call.
+12/10/2021 01:28:43 AM Attemping to process CSV data.
+12/10/2021 01:28:43 AM CSV data parsed
+12/10/2021 01:28:43 AM Attemping COVID-19 API call.
+12/10/2021 01:28:43 AM Successful COVID-19 API call.
+12/10/2021 01:28:43 AM Attemping to process CSV data.
+12/10/2021 01:28:43 AM CSV data parsed
+12/10/2021 01:28:43 AM Variables initialised successfully.
+12/10/2021 01:28:43 AM  * Debugger is active!
+12/10/2021 01:28:43 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:28:44 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:28:47 AM Rendering flask template.
+12/10/2021 01:28:47 AM 127.0.0.1 - - [10/Dec/2021 01:28:47] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:28:48 AM 127.0.0.1 - - [10/Dec/2021 01:28:48] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:28:50 AM Parsing CSV data.
+12/10/2021 01:28:50 AM Parsing CSV data.
+12/10/2021 01:28:50 AM Attemping to process CSV data.
+12/10/2021 01:28:50 AM CSV data parsed
+12/10/2021 01:28:50 AM Attemping COVID-19 API call.
+12/10/2021 01:28:51 AM Successful COVID-19 API call.
+12/10/2021 01:28:51 AM Attemping COVID-19 API call.
+12/10/2021 01:28:51 AM Successful COVID-19 API call.
+12/10/2021 01:28:51 AM Attemping to make News API call.
+12/10/2021 01:28:51 AM Successful News API call.
+12/10/2021 01:28:51 AM Attemping to make News API call.
+12/10/2021 01:28:52 AM Successful News API call.
+12/10/2021 01:28:52 AM Attemping to make News API call.
+12/10/2021 01:28:52 AM Updating news list.
+12/10/2021 01:28:52 AM Attemping to make News API call.
+12/10/2021 01:28:53 AM Successful News API call.
+12/10/2021 01:28:53 AM Attemping to make News API call.
+12/10/2021 01:28:53 AM Successful News API call.
+12/10/2021 01:28:53 AM All tests passed
+12/10/2021 01:28:53 AM Rendering flask template.
+12/10/2021 01:28:53 AM 127.0.0.1 - - [10/Dec/2021 01:28:53] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:28:53 AM 127.0.0.1 - - [10/Dec/2021 01:28:53] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:29:00 AM Rendering flask template.
+12/10/2021 01:29:00 AM 127.0.0.1 - - [10/Dec/2021 01:29:00] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:29:01 AM 127.0.0.1 - - [10/Dec/2021 01:29:01] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:29:03 AM Parsing CSV data.
+12/10/2021 01:29:03 AM Parsing CSV data.
+12/10/2021 01:29:03 AM Attemping to process CSV data.
+12/10/2021 01:29:03 AM CSV data parsed
+12/10/2021 01:29:03 AM Attemping COVID-19 API call.
+12/10/2021 01:29:04 AM Successful COVID-19 API call.
+12/10/2021 01:29:04 AM Attemping COVID-19 API call.
+12/10/2021 01:29:04 AM Successful COVID-19 API call.
+12/10/2021 01:29:04 AM Attemping to make News API call.
+12/10/2021 01:29:04 AM Successful News API call.
+12/10/2021 01:29:05 AM Attemping to make News API call.
+12/10/2021 01:29:05 AM Updating news list.
+12/10/2021 01:29:05 AM Attemping to make News API call.
+12/10/2021 01:29:05 AM Successful News API call.
+12/10/2021 01:29:05 AM Attemping to make News API call.
+12/10/2021 01:29:06 AM Successful News API call.
+12/10/2021 01:29:07 AM A test as failed, please fix ASAP
+12/10/2021 01:29:07 AM Rendering flask template.
+12/10/2021 01:29:07 AM 127.0.0.1 - - [10/Dec/2021 01:29:07] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:29:07 AM 127.0.0.1 - - [10/Dec/2021 01:29:07] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:30:07 AM Rendering flask template.
+12/10/2021 01:30:07 AM 127.0.0.1 - - [10/Dec/2021 01:30:07] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:30:08 AM 127.0.0.1 - - [10/Dec/2021 01:30:08] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:30:39 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\news_test.py', reloading
+12/10/2021 01:30:39 AM  * Restarting with stat
+12/10/2021 01:30:42 AM Attemping COVID-19 API call.
+12/10/2021 01:30:42 AM Successful COVID-19 API call.
+12/10/2021 01:30:42 AM Attemping to process CSV data.
+12/10/2021 01:30:42 AM CSV data parsed
+12/10/2021 01:30:42 AM Attemping COVID-19 API call.
+12/10/2021 01:30:43 AM Successful COVID-19 API call.
+12/10/2021 01:30:43 AM Attemping to process CSV data.
+12/10/2021 01:30:43 AM CSV data parsed
+12/10/2021 01:30:43 AM Variables initialised successfully.
+12/10/2021 01:30:43 AM  * Debugger is active!
+12/10/2021 01:30:43 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:30:43 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:30:47 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\sv.py', reloading
+12/10/2021 01:30:47 AM  * Restarting with stat
+12/10/2021 01:30:49 AM Attemping COVID-19 API call.
+12/10/2021 01:30:50 AM Successful COVID-19 API call.
+12/10/2021 01:30:50 AM Attemping to process CSV data.
+12/10/2021 01:30:50 AM CSV data parsed
+12/10/2021 01:30:50 AM Attemping COVID-19 API call.
+12/10/2021 01:30:50 AM Successful COVID-19 API call.
+12/10/2021 01:30:50 AM Attemping to process CSV data.
+12/10/2021 01:30:50 AM CSV data parsed
+12/10/2021 01:30:50 AM Variables initialised successfully.
+12/10/2021 01:30:50 AM  * Debugger is active!
+12/10/2021 01:30:50 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:30:50 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:30:56 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\covid_news_handling.py', reloading
+12/10/2021 01:30:57 AM  * Restarting with stat
+12/10/2021 01:31:00 AM Attemping COVID-19 API call.
+12/10/2021 01:31:01 AM Successful COVID-19 API call.
+12/10/2021 01:31:01 AM Attemping to process CSV data.
+12/10/2021 01:31:01 AM CSV data parsed
+12/10/2021 01:31:01 AM Attemping COVID-19 API call.
+12/10/2021 01:31:01 AM Successful COVID-19 API call.
+12/10/2021 01:31:01 AM Attemping to process CSV data.
+12/10/2021 01:31:01 AM CSV data parsed
+12/10/2021 01:31:01 AM Variables initialised successfully.
+12/10/2021 01:31:01 AM  * Restarting with stat
+12/10/2021 01:31:02 AM Attemping COVID-19 API call.
+12/10/2021 01:31:03 AM Successful COVID-19 API call.
+12/10/2021 01:31:03 AM Attemping to process CSV data.
+12/10/2021 01:31:03 AM CSV data parsed
+12/10/2021 01:31:03 AM Attemping COVID-19 API call.
+12/10/2021 01:31:03 AM Successful COVID-19 API call.
+12/10/2021 01:31:03 AM Attemping to process CSV data.
+12/10/2021 01:31:03 AM CSV data parsed
+12/10/2021 01:31:03 AM Variables initialised successfully.
+12/10/2021 01:31:03 AM  * Debugger is active!
+12/10/2021 01:31:03 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:31:03 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:31:04 AM Rendering flask template.
+12/10/2021 01:31:04 AM 127.0.0.1 - - [10/Dec/2021 01:31:04] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:31:05 AM 127.0.0.1 - - [10/Dec/2021 01:31:05] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:31:06 AM Parsing CSV data.
+12/10/2021 01:31:06 AM Parsing CSV data.
+12/10/2021 01:31:06 AM Attemping to process CSV data.
+12/10/2021 01:31:06 AM CSV data parsed
+12/10/2021 01:31:06 AM Attemping COVID-19 API call.
+12/10/2021 01:31:07 AM Successful COVID-19 API call.
+12/10/2021 01:31:07 AM Attemping COVID-19 API call.
+12/10/2021 01:31:07 AM Successful COVID-19 API call.
+12/10/2021 01:31:07 AM Attemping to make News API call.
+12/10/2021 01:31:07 AM Successful News API call.
+12/10/2021 01:31:07 AM Attemping to make News API call.
+12/10/2021 01:31:08 AM Successful News API call.
+12/10/2021 01:31:08 AM Attemping to make News API call.
+12/10/2021 01:31:08 AM Updating news list.
+12/10/2021 01:31:08 AM Attemping to make News API call.
+12/10/2021 01:31:08 AM Successful News API call.
+12/10/2021 01:31:08 AM Attemping to make News API call.
+12/10/2021 01:31:09 AM Successful News API call.
+12/10/2021 01:31:09 AM All tests passed
+12/10/2021 01:31:09 AM Rendering flask template.
+12/10/2021 01:31:09 AM 127.0.0.1 - - [10/Dec/2021 01:31:09] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:31:09 AM 127.0.0.1 - - [10/Dec/2021 01:31:09] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:31:12 AM Rendering flask template.
+12/10/2021 01:31:12 AM 127.0.0.1 - - [10/Dec/2021 01:31:12] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:31:13 AM 127.0.0.1 - - [10/Dec/2021 01:31:13] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:31:15 AM Parsing CSV data.
+12/10/2021 01:31:15 AM Parsing CSV data.
+12/10/2021 01:31:15 AM Attemping to process CSV data.
+12/10/2021 01:31:15 AM CSV data parsed
+12/10/2021 01:31:15 AM Attemping COVID-19 API call.
+12/10/2021 01:31:15 AM Successful COVID-19 API call.
+12/10/2021 01:31:15 AM Attemping COVID-19 API call.
+12/10/2021 01:31:16 AM Successful COVID-19 API call.
+12/10/2021 01:31:16 AM Attemping to make News API call.
+12/10/2021 01:31:16 AM Successful News API call.
+12/10/2021 01:31:16 AM Attemping to make News API call.
+12/10/2021 01:31:17 AM Successful News API call.
+12/10/2021 01:31:17 AM Attemping to make News API call.
+12/10/2021 01:31:17 AM Updating news list.
+12/10/2021 01:31:17 AM Attemping to make News API call.
+12/10/2021 01:31:17 AM Successful News API call.
+12/10/2021 01:31:17 AM Attemping to make News API call.
+12/10/2021 01:31:18 AM Successful News API call.
+12/10/2021 01:31:18 AM A test as failed, please fix ASAP
+12/10/2021 01:31:18 AM Rendering flask template.
+12/10/2021 01:31:18 AM 127.0.0.1 - - [10/Dec/2021 01:31:18] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:31:19 AM 127.0.0.1 - - [10/Dec/2021 01:31:19] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:32:19 AM Rendering flask template.
+12/10/2021 01:32:19 AM 127.0.0.1 - - [10/Dec/2021 01:32:19] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:32:19 AM 127.0.0.1 - - [10/Dec/2021 01:32:19] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:33:20 AM Parsing CSV data.
+12/10/2021 01:33:20 AM Parsing CSV data.
+12/10/2021 01:33:20 AM Attemping to process CSV data.
+12/10/2021 01:33:20 AM CSV data parsed
+12/10/2021 01:33:20 AM Attemping COVID-19 API call.
+12/10/2021 01:33:20 AM Successful COVID-19 API call.
+12/10/2021 01:33:20 AM Attemping COVID-19 API call.
+12/10/2021 01:33:21 AM Successful COVID-19 API call.
+12/10/2021 01:33:21 AM Attemping to make News API call.
+12/10/2021 01:33:21 AM Successful News API call.
+12/10/2021 01:33:21 AM Attemping to make News API call.
+12/10/2021 01:33:22 AM Updating news list.
+12/10/2021 01:33:22 AM Attemping to make News API call.
+12/10/2021 01:33:22 AM Successful News API call.
+12/10/2021 01:33:22 AM Attemping to make News API call.
+12/10/2021 01:33:22 AM Successful News API call.
+12/10/2021 01:33:23 AM A test as failed, please fix ASAP
+12/10/2021 01:33:23 AM Rendering flask template.
+12/10/2021 01:33:23 AM 127.0.0.1 - - [10/Dec/2021 01:33:23] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:33:24 AM 127.0.0.1 - - [10/Dec/2021 01:33:24] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:34:24 AM Rendering flask template.
+12/10/2021 01:34:24 AM 127.0.0.1 - - [10/Dec/2021 01:34:24] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:34:24 AM 127.0.0.1 - - [10/Dec/2021 01:34:24] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:35:03 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\covid_news_handling.py', reloading
+12/10/2021 01:35:03 AM  * Restarting with stat
+12/10/2021 01:35:43 AM Attemping COVID-19 API call.
+12/10/2021 01:35:44 AM Successful COVID-19 API call.
+12/10/2021 01:35:44 AM Attemping to process CSV data.
+12/10/2021 01:35:44 AM CSV data parsed
+12/10/2021 01:35:44 AM Attemping COVID-19 API call.
+12/10/2021 01:35:45 AM Successful COVID-19 API call.
+12/10/2021 01:35:45 AM Attemping to process CSV data.
+12/10/2021 01:35:45 AM CSV data parsed
+12/10/2021 01:35:45 AM Variables initialised successfully.
+12/10/2021 01:35:45 AM  * Restarting with stat
+12/10/2021 01:35:49 AM Attemping COVID-19 API call.
+12/10/2021 01:35:50 AM Successful COVID-19 API call.
+12/10/2021 01:35:50 AM Attemping to process CSV data.
+12/10/2021 01:35:50 AM CSV data parsed
+12/10/2021 01:35:50 AM Attemping COVID-19 API call.
+12/10/2021 01:35:50 AM Successful COVID-19 API call.
+12/10/2021 01:35:50 AM Attemping to process CSV data.
+12/10/2021 01:35:50 AM CSV data parsed
+12/10/2021 01:35:50 AM Variables initialised successfully.
+12/10/2021 01:35:50 AM  * Debugger is active!
+12/10/2021 01:35:50 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:35:50 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:35:55 AM Rendering flask template.
+12/10/2021 01:35:55 AM 127.0.0.1 - - [10/Dec/2021 01:35:55] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:35:56 AM 127.0.0.1 - - [10/Dec/2021 01:35:56] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:35:59 AM Parsing CSV data.
+12/10/2021 01:35:59 AM Parsing CSV data.
+12/10/2021 01:35:59 AM Attemping to process CSV data.
+12/10/2021 01:35:59 AM CSV data parsed
+12/10/2021 01:35:59 AM Attemping COVID-19 API call.
+12/10/2021 01:36:00 AM Successful COVID-19 API call.
+12/10/2021 01:36:00 AM Attemping COVID-19 API call.
+12/10/2021 01:36:01 AM Successful COVID-19 API call.
+12/10/2021 01:36:01 AM Attemping to make News API call.
+12/10/2021 01:36:01 AM Successful News API call.
+12/10/2021 01:36:01 AM Attemping to make News API call.
+12/10/2021 01:36:02 AM Updating news list.
+12/10/2021 01:36:02 AM Attemping to make News API call.
+12/10/2021 01:36:02 AM Successful News API call.
+12/10/2021 01:36:03 AM Attemping to make News API call.
+12/10/2021 01:36:03 AM Successful News API call.
+12/10/2021 01:36:09 AM A test as failed, please fix ASAP
+12/10/2021 01:36:09 AM Rendering flask template.
+12/10/2021 01:36:09 AM 127.0.0.1 - - [10/Dec/2021 01:36:09] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:36:10 AM 127.0.0.1 - - [10/Dec/2021 01:36:10] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:36:34 AM Attemping COVID-19 API call.
+12/10/2021 01:36:34 AM Successful COVID-19 API call.
+12/10/2021 01:36:34 AM Attemping to process CSV data.
+12/10/2021 01:36:34 AM CSV data parsed
+12/10/2021 01:36:34 AM Attemping COVID-19 API call.
+12/10/2021 01:36:35 AM Successful COVID-19 API call.
+12/10/2021 01:36:35 AM Attemping to process CSV data.
+12/10/2021 01:36:35 AM CSV data parsed
+12/10/2021 01:36:35 AM Variables initialised successfully.
+12/10/2021 01:36:35 AM  * Restarting with stat
+12/10/2021 01:36:40 AM Attemping COVID-19 API call.
+12/10/2021 01:36:40 AM Successful COVID-19 API call.
+12/10/2021 01:36:40 AM Attemping to process CSV data.
+12/10/2021 01:36:40 AM CSV data parsed
+12/10/2021 01:36:40 AM Attemping COVID-19 API call.
+12/10/2021 01:36:40 AM Successful COVID-19 API call.
+12/10/2021 01:36:40 AM Attemping to process CSV data.
+12/10/2021 01:36:40 AM CSV data parsed
+12/10/2021 01:36:40 AM Variables initialised successfully.
+12/10/2021 01:36:40 AM  * Debugger is active!
+12/10/2021 01:36:40 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:36:41 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:36:41 AM Rendering flask template.
+12/10/2021 01:36:41 AM 127.0.0.1 - - [10/Dec/2021 01:36:41] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:36:41 AM 127.0.0.1 - - [10/Dec/2021 01:36:41] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:36:46 AM Parsing CSV data.
+12/10/2021 01:36:46 AM Parsing CSV data.
+12/10/2021 01:36:46 AM Attemping to process CSV data.
+12/10/2021 01:36:46 AM CSV data parsed
+12/10/2021 01:36:46 AM Attemping COVID-19 API call.
+12/10/2021 01:36:47 AM Successful COVID-19 API call.
+12/10/2021 01:36:47 AM Attemping COVID-19 API call.
+12/10/2021 01:36:47 AM Successful COVID-19 API call.
+12/10/2021 01:36:47 AM Attemping to make News API call.
+12/10/2021 01:36:48 AM Successful News API call.
+12/10/2021 01:36:48 AM Attemping to make News API call.
+12/10/2021 01:36:48 AM Updating news list.
+12/10/2021 01:36:48 AM Attemping to make News API call.
+12/10/2021 01:36:49 AM Successful News API call.
+12/10/2021 01:36:49 AM Attemping to make News API call.
+12/10/2021 01:36:49 AM Successful News API call.
+12/10/2021 01:36:51 AM A test as failed, please fix ASAP
+12/10/2021 01:36:51 AM Rendering flask template.
+12/10/2021 01:36:51 AM 127.0.0.1 - - [10/Dec/2021 01:36:51] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:36:51 AM 127.0.0.1 - - [10/Dec/2021 01:36:51] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:37:02 AM Rendering flask template.
+12/10/2021 01:37:02 AM 127.0.0.1 - - [10/Dec/2021 01:37:02] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:37:02 AM 127.0.0.1 - - [10/Dec/2021 01:37:02] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:37:03 AM Parsing CSV data.
+12/10/2021 01:37:03 AM Parsing CSV data.
+12/10/2021 01:37:03 AM Attemping to process CSV data.
+12/10/2021 01:37:03 AM CSV data parsed
+12/10/2021 01:37:03 AM Attemping COVID-19 API call.
+12/10/2021 01:37:04 AM Successful COVID-19 API call.
+12/10/2021 01:37:04 AM Attemping COVID-19 API call.
+12/10/2021 01:37:04 AM Successful COVID-19 API call.
+12/10/2021 01:37:04 AM Attemping to make News API call.
+12/10/2021 01:37:04 AM Successful News API call.
+12/10/2021 01:37:05 AM Attemping to make News API call.
+12/10/2021 01:37:05 AM Updating news list.
+12/10/2021 01:37:05 AM Attemping to make News API call.
+12/10/2021 01:37:05 AM Successful News API call.
+12/10/2021 01:37:05 AM Attemping to make News API call.
+12/10/2021 01:37:05 AM Successful News API call.
+12/10/2021 01:37:06 AM A test as failed, please fix ASAP
+12/10/2021 01:37:06 AM Rendering flask template.
+12/10/2021 01:37:06 AM 127.0.0.1 - - [10/Dec/2021 01:37:06] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:37:06 AM 127.0.0.1 - - [10/Dec/2021 01:37:06] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:38:06 AM Rendering flask template.
+12/10/2021 01:38:07 AM 127.0.0.1 - - [10/Dec/2021 01:38:07] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:38:07 AM 127.0.0.1 - - [10/Dec/2021 01:38:07] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:38:17 AM  * Detected change in 'C:\\Users\\James\\Desktop\\python\\assessment\\covid_news_handling.py', reloading
+12/10/2021 01:38:18 AM  * Restarting with stat
+12/10/2021 01:40:24 AM Attemping COVID-19 API call.
+12/10/2021 01:40:25 AM Successful COVID-19 API call.
+12/10/2021 01:40:25 AM Attemping to process CSV data.
+12/10/2021 01:40:25 AM CSV data parsed
+12/10/2021 01:40:25 AM Attemping COVID-19 API call.
+12/10/2021 01:40:25 AM Successful COVID-19 API call.
+12/10/2021 01:40:25 AM Attemping to process CSV data.
+12/10/2021 01:40:25 AM CSV data parsed
+12/10/2021 01:40:25 AM Variables initialised successfully.
+12/10/2021 01:40:25 AM  * Restarting with stat
+12/10/2021 01:40:30 AM Attemping COVID-19 API call.
+12/10/2021 01:40:30 AM Successful COVID-19 API call.
+12/10/2021 01:40:30 AM Attemping to process CSV data.
+12/10/2021 01:40:30 AM CSV data parsed
+12/10/2021 01:40:30 AM Attemping COVID-19 API call.
+12/10/2021 01:40:30 AM Successful COVID-19 API call.
+12/10/2021 01:40:30 AM Attemping to process CSV data.
+12/10/2021 01:40:30 AM CSV data parsed
+12/10/2021 01:40:30 AM Variables initialised successfully.
+12/10/2021 01:40:30 AM  * Debugger is active!
+12/10/2021 01:40:30 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:40:30 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:40:33 AM Rendering flask template.
+12/10/2021 01:40:33 AM 127.0.0.1 - - [10/Dec/2021 01:40:33] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:40:34 AM 127.0.0.1 - - [10/Dec/2021 01:40:34] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:40:35 AM Parsing CSV data.
+12/10/2021 01:40:35 AM Parsing CSV data.
+12/10/2021 01:40:35 AM Attemping to process CSV data.
+12/10/2021 01:40:35 AM CSV data parsed
+12/10/2021 01:40:35 AM Attemping COVID-19 API call.
+12/10/2021 01:40:35 AM Successful COVID-19 API call.
+12/10/2021 01:40:35 AM Attemping COVID-19 API call.
+12/10/2021 01:40:36 AM Successful COVID-19 API call.
+12/10/2021 01:40:36 AM Attemping to make News API call.
+12/10/2021 01:40:36 AM Successful News API call.
+12/10/2021 01:40:37 AM Attemping to make News API call.
+12/10/2021 01:40:37 AM Updating news list.
+12/10/2021 01:40:37 AM Attemping to make News API call.
+12/10/2021 01:40:38 AM Successful News API call.
+12/10/2021 01:40:38 AM Attemping to make News API call.
+12/10/2021 01:40:38 AM Successful News API call.
+12/10/2021 01:40:39 AM A test as failed, please fix ASAP
+12/10/2021 01:40:39 AM Rendering flask template.
+12/10/2021 01:40:39 AM 127.0.0.1 - - [10/Dec/2021 01:40:39] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:40:39 AM 127.0.0.1 - - [10/Dec/2021 01:40:39] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:41:56 AM Attemping COVID-19 API call.
+12/10/2021 01:41:56 AM Successful COVID-19 API call.
+12/10/2021 01:41:56 AM Attemping to process CSV data.
+12/10/2021 01:41:56 AM CSV data parsed
+12/10/2021 01:41:56 AM Attemping COVID-19 API call.
+12/10/2021 01:41:57 AM Successful COVID-19 API call.
+12/10/2021 01:41:57 AM Attemping to process CSV data.
+12/10/2021 01:41:57 AM CSV data parsed
+12/10/2021 01:41:57 AM Variables initialised successfully.
+12/10/2021 01:41:57 AM  * Restarting with stat
+12/10/2021 01:41:58 AM Attemping COVID-19 API call.
+12/10/2021 01:41:59 AM Successful COVID-19 API call.
+12/10/2021 01:41:59 AM Attemping to process CSV data.
+12/10/2021 01:41:59 AM CSV data parsed
+12/10/2021 01:41:59 AM Attemping COVID-19 API call.
+12/10/2021 01:41:59 AM Successful COVID-19 API call.
+12/10/2021 01:41:59 AM Attemping to process CSV data.
+12/10/2021 01:41:59 AM CSV data parsed
+12/10/2021 01:41:59 AM Variables initialised successfully.
+12/10/2021 01:41:59 AM  * Debugger is active!
+12/10/2021 01:41:59 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:41:59 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:42:00 AM Rendering flask template.
+12/10/2021 01:42:00 AM 127.0.0.1 - - [10/Dec/2021 01:42:00] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:42:01 AM 127.0.0.1 - - [10/Dec/2021 01:42:01] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:42:03 AM Parsing CSV data.
+12/10/2021 01:42:03 AM Parsing CSV data.
+12/10/2021 01:42:03 AM Attemping to process CSV data.
+12/10/2021 01:42:03 AM CSV data parsed
+12/10/2021 01:42:03 AM Attemping COVID-19 API call.
+12/10/2021 01:42:03 AM Successful COVID-19 API call.
+12/10/2021 01:42:03 AM Attemping COVID-19 API call.
+12/10/2021 01:42:03 AM Successful COVID-19 API call.
+12/10/2021 01:42:03 AM Attemping to make News API call.
+12/10/2021 01:42:04 AM Successful News API call.
+12/10/2021 01:42:04 AM Attemping to make News API call.
+12/10/2021 01:42:04 AM Successful News API call.
+12/10/2021 01:42:04 AM Attemping to make News API call.
+12/10/2021 01:42:04 AM Updating news list.
+12/10/2021 01:42:04 AM Attemping to make News API call.
+12/10/2021 01:42:05 AM Successful News API call.
+12/10/2021 01:42:05 AM Attemping to make News API call.
+12/10/2021 01:42:05 AM Successful News API call.
+12/10/2021 01:42:05 AM All tests passed
+12/10/2021 01:42:05 AM Rendering flask template.
+12/10/2021 01:42:05 AM 127.0.0.1 - - [10/Dec/2021 01:42:05] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:42:05 AM 127.0.0.1 - - [10/Dec/2021 01:42:05] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:42:07 AM Rendering flask template.
+12/10/2021 01:42:07 AM 127.0.0.1 - - [10/Dec/2021 01:42:07] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:42:08 AM 127.0.0.1 - - [10/Dec/2021 01:42:08] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:42:10 AM Parsing CSV data.
+12/10/2021 01:42:10 AM Parsing CSV data.
+12/10/2021 01:42:10 AM Attemping to process CSV data.
+12/10/2021 01:42:10 AM CSV data parsed
+12/10/2021 01:42:10 AM Attemping COVID-19 API call.
+12/10/2021 01:42:10 AM Successful COVID-19 API call.
+12/10/2021 01:42:10 AM Attemping COVID-19 API call.
+12/10/2021 01:42:11 AM Successful COVID-19 API call.
+12/10/2021 01:42:11 AM Attemping to make News API call.
+12/10/2021 01:42:11 AM Successful News API call.
+12/10/2021 01:42:11 AM Attemping to make News API call.
+12/10/2021 01:42:12 AM Successful News API call.
+12/10/2021 01:42:12 AM Attemping to make News API call.
+12/10/2021 01:42:12 AM Updating news list.
+12/10/2021 01:42:12 AM Attemping to make News API call.
+12/10/2021 01:42:12 AM Successful News API call.
+12/10/2021 01:42:12 AM Attemping to make News API call.
+12/10/2021 01:42:13 AM Successful News API call.
+12/10/2021 01:42:13 AM All tests passed
+12/10/2021 01:42:13 AM Rendering flask template.
+12/10/2021 01:42:13 AM 127.0.0.1 - - [10/Dec/2021 01:42:13] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:42:13 AM 127.0.0.1 - - [10/Dec/2021 01:42:13] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:22 AM Attemping COVID-19 API call.
+12/10/2021 01:48:23 AM Successful COVID-19 API call.
+12/10/2021 01:48:23 AM Attemping to process CSV data.
+12/10/2021 01:48:23 AM CSV data parsed
+12/10/2021 01:48:23 AM Attemping COVID-19 API call.
+12/10/2021 01:48:23 AM Successful COVID-19 API call.
+12/10/2021 01:48:23 AM Attemping to process CSV data.
+12/10/2021 01:48:23 AM CSV data parsed
+12/10/2021 01:48:23 AM Variables initialised successfully.
+12/10/2021 01:48:23 AM  * Restarting with stat
+12/10/2021 01:48:25 AM Attemping COVID-19 API call.
+12/10/2021 01:48:26 AM Successful COVID-19 API call.
+12/10/2021 01:48:26 AM Attemping to process CSV data.
+12/10/2021 01:48:26 AM CSV data parsed
+12/10/2021 01:48:26 AM Attemping COVID-19 API call.
+12/10/2021 01:48:26 AM Successful COVID-19 API call.
+12/10/2021 01:48:26 AM Attemping to process CSV data.
+12/10/2021 01:48:26 AM CSV data parsed
+12/10/2021 01:48:26 AM Variables initialised successfully.
+12/10/2021 01:48:26 AM  * Debugger is active!
+12/10/2021 01:48:26 AM  * Debugger PIN: 129-570-063
+12/10/2021 01:48:26 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 01:48:27 AM Rendering flask template.
+12/10/2021 01:48:27 AM 127.0.0.1 - - [10/Dec/2021 01:48:27] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:48:28 AM 127.0.0.1 - - [10/Dec/2021 01:48:28] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:30 AM Rendering flask template.
+12/10/2021 01:48:30 AM 127.0.0.1 - - [10/Dec/2021 01:48:30] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:48:30 AM 127.0.0.1 - - [10/Dec/2021 01:48:30] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:30 AM Parsing CSV data.
+12/10/2021 01:48:30 AM Parsing CSV data.
+12/10/2021 01:48:30 AM Attemping to process CSV data.
+12/10/2021 01:48:30 AM CSV data parsed
+12/10/2021 01:48:30 AM Attemping COVID-19 API call.
+12/10/2021 01:48:30 AM Successful COVID-19 API call.
+12/10/2021 01:48:30 AM Attemping COVID-19 API call.
+12/10/2021 01:48:31 AM Successful COVID-19 API call.
+12/10/2021 01:48:31 AM Attemping to make News API call.
+12/10/2021 01:48:31 AM Successful News API call.
+12/10/2021 01:48:31 AM Attemping to make News API call.
+12/10/2021 01:48:32 AM Successful News API call.
+12/10/2021 01:48:32 AM Attemping to make News API call.
+12/10/2021 01:48:32 AM Updating news list.
+12/10/2021 01:48:32 AM Attemping to make News API call.
+12/10/2021 01:48:32 AM Successful News API call.
+12/10/2021 01:48:32 AM Attemping to make News API call.
+12/10/2021 01:48:33 AM Successful News API call.
+12/10/2021 01:48:33 AM All tests passed
+12/10/2021 01:48:34 AM Removed article(s).
+12/10/2021 01:48:34 AM 127.0.0.1 - - [10/Dec/2021 01:48:34] "[32mGET /index?notif=Covid-19+Boosters+for+All+Are+On+the+Way HTTP/1.1[0m" 302 -
+12/10/2021 01:48:34 AM Rendering flask template.
+12/10/2021 01:48:34 AM 127.0.0.1 - - [10/Dec/2021 01:48:34] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:48:34 AM 127.0.0.1 - - [10/Dec/2021 01:48:34] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:46 AM Rendering flask template.
+12/10/2021 01:48:46 AM 127.0.0.1 - - [10/Dec/2021 01:48:46] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:48:47 AM Parsing CSV data.
+12/10/2021 01:48:47 AM Parsing CSV data.
+12/10/2021 01:48:47 AM Attemping to process CSV data.
+12/10/2021 01:48:47 AM CSV data parsed
+12/10/2021 01:48:47 AM Attemping COVID-19 API call.
+12/10/2021 01:48:47 AM 127.0.0.1 - - [10/Dec/2021 01:48:47] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:47 AM Successful COVID-19 API call.
+12/10/2021 01:48:47 AM Attemping COVID-19 API call.
+12/10/2021 01:48:48 AM Successful COVID-19 API call.
+12/10/2021 01:48:48 AM Attemping to make News API call.
+12/10/2021 01:48:48 AM Successful News API call.
+12/10/2021 01:48:48 AM Attemping to make News API call.
+12/10/2021 01:48:49 AM Removed article(s).
+12/10/2021 01:48:49 AM 127.0.0.1 - - [10/Dec/2021 01:48:49] "[32mGET /index?notif=All+53%2C000+attendees+of+Anime+NYC+urged+to+get+tested+after+one+got+Omicron HTTP/1.1[0m" 302 -
+12/10/2021 01:48:49 AM Rendering flask template.
+12/10/2021 01:48:49 AM 127.0.0.1 - - [10/Dec/2021 01:48:49] "GET /index HTTP/1.1" 200 -
+12/10/2021 01:48:49 AM Successful News API call.
+12/10/2021 01:48:49 AM Attemping to make News API call.
+12/10/2021 01:48:49 AM Updating news list.
+12/10/2021 01:48:49 AM Attemping to make News API call.
+12/10/2021 01:48:49 AM 127.0.0.1 - - [10/Dec/2021 01:48:49] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
+12/10/2021 01:48:49 AM Successful News API call.
+12/10/2021 01:48:49 AM Attemping to make News API call.
+12/10/2021 01:48:50 AM Successful News API call.
+12/10/2021 01:48:50 AM All tests passed
