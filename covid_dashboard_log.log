@@ -1422,3 +1422,6 @@
 12/10/2021 02:45:19 AM  * Debugger is active!
 12/10/2021 02:45:19 AM  * Debugger PIN: 129-570-063
 12/10/2021 02:45:19 AM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+12/10/2021 03:03:44 AM Rendering flask template.
+12/10/2021 03:03:44 AM 127.0.0.1 - - [10/Dec/2021 03:03:44] "GET /index HTTP/1.1" 200 -
+12/10/2021 03:03:45 AM 127.0.0.1 - - [10/Dec/2021 03:03:45] "[36mGET /static/images/covid19.png HTTP/1.1[0m" 304 -
