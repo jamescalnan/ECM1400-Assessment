@@ -71,6 +71,7 @@
  - [rich](https://github.com/willmcgugan/rich)
 
  ###Function descriptions
+
  covid_data_handler.py
  - parse_csv_data: This will interpret the csv data and return it in 
  a convenient format for other functions to use.
@@ -87,16 +88,25 @@
  - schedule_covid_updates: This function will be used to schedule updates to the COVID-19 data
  
  covid_news_handling.py
- -
+ - news_api_request: This function will make the API request
+ - get_current_article_titles: This function will return the titles from the list passed through
+ - update_news: This function will remove articles and use the API to get new articles
+ - remove_article: This function will remove an article from the list
+ - get_updated_news_data: This function will return new news data to be used in the scheduler
+ - schedule_news_updates: This function will be used to schedule updates to the news data
 
-
-
-
-
-
-
-
-
-dd
+ flask_app.py
+ - format_time: This function will format the time into HH:MM format
+ - get_seconds_until_update: This function will calculate the amount of seconds
+ until the inputted time
+ - update_elapsed: This function will check to see if an update has elapsed
+ - enqueue_update: This function will enqueue an update in update queue
+ - start_thread: This function will start a thread
  
+ ##Author
+ James Calnan
+ jdc235@exeter.ac.uk
+ 
+ ##Specification
+ https://vle.exeter.ac.uk/pluginfile.php/2954508/mod_label/intro/CA-specification.pdf
  
